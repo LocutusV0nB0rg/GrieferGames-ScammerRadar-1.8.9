@@ -317,3 +317,7 @@ java.io.FileNotFoundException: /Users/Tim/Library/Java/Extensions:/Library/Java/
 [17:28:57] [Thread-15/INFO]: FanaticTroll
 [17:28:57] [Thread-15/INFO]: leH1VE
 [17:28:57] [Thread-15/INFO]: LilaNash
+[17:33:10] [Client thread/INFO]: Stopping!
+[17:33:10] [Client thread/INFO]: SoundSystem shutting down...
+[17:33:10] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[17:33:10] [Thread-16/INFO]: [Debug] [UPDATER] Executing LabyMod Updater
