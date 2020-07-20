@@ -1,0 +1,37 @@
+{
+  "autoTextKeyBinds": [
+    {
+      "message": "/p h ",
+      "keyShift": false,
+      "keyCtrl": false,
+      "keyAlt": false,
+      "keyCode": 2,
+      "sendNotInstantly": false,
+      "serverBound": false,
+      "serverAddress": "",
+      "available": true
+    },
+    {
+      "message": "/sethome neu",
+      "keyShift": false,
+      "keyCtrl": false,
+      "keyAlt": false,
+      "keyCode": 35,
+      "sendNotInstantly": false,
+      "serverBound": false,
+      "serverAddress": "",
+      "available": true
+    },
+    {
+      "message": "/home lager",
+      "keyShift": false,
+      "keyCtrl": false,
+      "keyAlt": false,
+      "keyCode": 38,
+      "sendNotInstantly": false,
+      "serverBound": false,
+      "serverAddress": "",
+      "available": true
+    }
+  ]
+}

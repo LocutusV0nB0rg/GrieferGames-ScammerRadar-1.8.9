@@ -1,0 +1,10 @@
+{
+	"uuid":"%uuid%",
+	"name":"AntiScammer Addon",
+	"mainClass":"de.newH1VE.griefergames.GrieferGames",
+	"description": "This add-on helps you to identify scammer in public/private chat.",
+	"version": 1,
+	"author": "newH1VE",
+	"category": 2,
+	"icon" : "http://icons.iconarchive.com/icons/mattahan/ultrabuuf/256/Comics-Captain-America-Shield-icon.png"
+}
