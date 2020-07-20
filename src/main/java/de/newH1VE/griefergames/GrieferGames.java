@@ -6,7 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-import de.newH1VE.griefergames.Listener.OnTickEvent;
+import de.newH1VE.griefergames.Events.OnTickEvent;
 import de.newH1VE.griefergames.chat.AntiScammer;
 import net.labymod.api.LabyModAddon;
 import net.labymod.api.events.MessageModifyChatEvent;
