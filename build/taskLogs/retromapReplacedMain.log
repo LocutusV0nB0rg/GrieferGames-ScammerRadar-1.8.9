@@ -33390,16 +33390,111 @@ RENAME MAP: param net/minecraft/world/storage/WorldInfo/WorldInfo (Lnet/minecraf
 Start Processing: de/newH1VE/griefergames/Enum/ColorEnum.java
 End  Processing: de/newH1VE/griefergames/Enum/ColorEnum.java
 
+Start Processing: de/newH1VE/griefergames/Events/OnTickEvent.java
+[method, de/newH1VE/griefergames/Events/OnTickEvent/onTick, (Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V]
+No rename for class net/minecraftforge/fml/common/gameevent/TickEvent/ClientTickEvent
+Rename class net/minecraft/client/Minecraft[887,896]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[897,909]::getMinecraft->func_71410_x
+Rename field net/minecraft/client/Minecraft/gameSettings[912,924]::gameSettings->field_71474_y
+Rename field net/minecraft/client/settings/GameSettings/keyBindPlayerList[926,943]::keyBindPlayerList->field_74321_H
+Rename method net/minecraft/client/settings/KeyBinding/isKeyDown ()Z[940,949]::isKeyDown->func_151470_d
+[method, de/newH1VE/griefergames/GrieferGames/getGrieferGames, ()Lde/newH1VE/griefergames/GrieferGames;]
+[method, de/newH1VE/griefergames/GrieferGames/isModEnabled, ()Z]
+[method, de/newH1VE/griefergames/GrieferGames/getGrieferGames, ()Lde/newH1VE/griefergames/GrieferGames;]
+[method, de/newH1VE/griefergames/GrieferGames/isTabListEnabled, ()Z]
+Rename class net/minecraft/client/Minecraft[1078,1087]::Minecraft->Minecraft
+Rename method net/minecraft/client/Minecraft/getMinecraft ()Lnet/minecraft/client/Minecraft;[1088,1100]::getMinecraft->func_71410_x
+Rename method net/minecraft/client/Minecraft/isSingleplayer ()Z[1103,1117]::isSingleplayer->func_71356_B
+[method, java/util/concurrent/locks/Lock/lock, ()V]
+[method, java/lang/Runnable/run, ()V]
+[method, de/newH1VE/griefergames/Events/OnTickEvent/modifyTabList, ()V]
+[method, java/lang/Thread/start, ()V]
+[method, java/util/concurrent/locks/Lock/unlock, ()V]
+[method, de/newH1VE/griefergames/Events/OnTickEvent/modifyTabList, ()V]
+[method, de/newH1VE/griefergames/GrieferGames/getAntiscammer, ()Lde/newH1VE/griefergames/chat/AntiScammer;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getScammerList, ()Ljava/util/List;]
+Rename class net/minecraft/util/EnumChatFormatting[1626,1644]::EnumChatFormatting->EnumChatFormatting
+[method, de/newH1VE/griefergames/GrieferGames/getGrieferGames, ()Lde/newH1VE/griefergames/GrieferGames;]
+[method, de/newH1VE/griefergames/GrieferGames/getChatformat, ()Lnet/minecraft/util/EnumChatFormatting;]
+Rename class net/minecraft/client/network/NetHandlerPlayClient[1714,1734]::NetHandlerPlayClient->NetHandlerPlayClient
+[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
+[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
+Rename field net/minecraft/client/entity/EntityPlayerSP/sendQueue[1797,1806]::sendQueue->field_71174_a
+Rename class net/minecraft/client/network/NetworkPlayerInfo[1831,1848]::NetworkPlayerInfo->NetworkPlayerInfo
+Rename method net/minecraft/client/network/NetHandlerPlayClient/getPlayerInfoMap ()Ljava/util/Collection;[1883,1899]::getPlayerInfoMap->func_175106_d
+Rename class net/minecraft/client/network/NetworkPlayerInfo[1948,1965]::NetworkPlayerInfo->NetworkPlayerInfo
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[2070,2084]::getDisplayName->func_178854_k
+Rename class net/minecraft/util/IChatComponent[2125,2139]::IChatComponent->IChatComponent
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[2167,2181]::getDisplayName->func_178854_k
+Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[2251,2267]::getFormattedText->func_150254_d
+[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+[method, java/lang/String/indexOf, (Ljava/lang/String;)I]
+[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+Rename class net/minecraft/util/ChatComponentText[2577,2594]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[2689,2707]::getUnformattedText->func_150260_c
+[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[2798,2809]::getSiblings->func_150253_a
+[method, java/util/List/get, (I)Ljava/lang/Object;]
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[2836,2847]::getSiblings->func_150253_a
+[method, java/util/Collection/size, ()I]
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[2960,2978]::getUnformattedText->func_150260_c
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getGameProfile ()Lcom/mojang/authlib/GameProfile;[3032,3046]::getGameProfile->func_178845_a
+[method, com/mojang/authlib/GameProfile/getName, ()Ljava/lang/String;]
+Rename class net/minecraft/util/IChatComponent[3087,3101]::IChatComponent->IChatComponent
+[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
+[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
+Rename class net/minecraft/util/IChatComponent[3454,3468]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[3483,3500]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[3506,3518]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[3524,3533]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[3536,3544]::setColor->func_150238_a
+Rename class net/minecraft/util/EnumChatFormatting[3550,3568]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/YELLOW[3569,3575]::YELLOW->YELLOW
+Rename class net/minecraft/util/IChatComponent[3619,3633]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[3647,3664]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[3671,3683]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[3689,3698]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[3701,3709]::setColor->func_150238_a
+Rename class net/minecraft/util/EnumChatFormatting[3715,3733]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/YELLOW[3734,3740]::YELLOW->YELLOW
+Rename class net/minecraft/util/IChatComponent[3784,3798]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[3810,3827]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[3839,3851]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[3857,3866]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[3869,3877]::setColor->func_150238_a
+Rename method net/minecraft/util/ChatStyle/setBold (Ljava/lang/Boolean;)Lnet/minecraft/util/ChatStyle;[3895,3902]::setBold->func_150227_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[3988,4001]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[4008,4021]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[4030,4043]::appendSibling->func_150257_a
+[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[4326,4337]::getSiblings->func_150253_a
+[method, java/util/List/get, (I)Ljava/lang/Object;]
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[4364,4375]::getSiblings->func_150253_a
+[method, java/util/Collection/size, ()I]
+Rename method net/minecraft/client/network/NetworkPlayerInfo/setDisplayName (Lnet/minecraft/util/IChatComponent;)V[4458,4472]::setDisplayName->func_178859_a
+[method, java/lang/Throwable/printStackTrace, ()V]
+Import: net.minecraft.client.Minecraft
+Import: net.minecraft.client.network.NetHandlerPlayClient
+Import: net.minecraft.client.network.NetworkPlayerInfo
+Import: net.minecraft.util.ChatComponentText
+Import: net.minecraft.util.ChatStyle
+Import: net.minecraft.util.EnumChatFormatting
+Import: net.minecraft.util.IChatComponent
+Adding 0 imports
+End  Processing: de/newH1VE/griefergames/Events/OnTickEvent.java
+
 Start Processing: de/newH1VE/griefergames/GrieferGames.java
 Warning: de/newH1VE/griefergames/GrieferGames.java has CRLF line endings; consider switching to LF
 [method, java/util/regex/Pattern/compile, (Ljava/lang/String;)Ljava/util/regex/Pattern;]
-Rename class net/minecraft/util/EnumChatFormatting[2174,2192]::EnumChatFormatting->EnumChatFormatting
-Rename class net/minecraft/util/EnumChatFormatting[2206,2224]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_RED[2225,2233]::DARK_RED->DARK_RED
-Rename class net/minecraft/client/Minecraft[2301,2310]::Minecraft->Minecraft
+Rename class net/minecraft/util/EnumChatFormatting[1518,1536]::EnumChatFormatting->EnumChatFormatting
+Rename class net/minecraft/util/EnumChatFormatting[1550,1568]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_RED[1569,1577]::DARK_RED->DARK_RED
+Rename class net/minecraft/client/Minecraft[1645,1654]::Minecraft->Minecraft
 [method, de/newH1VE/griefergames/GrieferGames/isTabListEnabled, ()Z]
 [method, de/newH1VE/griefergames/GrieferGames/setTabListEnabled, (Z)V]
 [method, de/newH1VE/griefergames/GrieferGames/isMessageEnabled, ()Z]
+[method, de/newH1VE/griefergames/GrieferGames/getAntiscammer, ()Lde/newH1VE/griefergames/chat/AntiScammer;]
 [method, de/newH1VE/griefergames/GrieferGames/isPrefixEnabled, ()Z]
 [method, de/newH1VE/griefergames/GrieferGames/setPrefixEnabled, (Z)V]
 [method, de/newH1VE/griefergames/GrieferGames/isModEnabled, ()Z]
@@ -33415,66 +33510,66 @@ Rename class net/minecraft/client/Minecraft[2301,2310]::Minecraft->Minecraft
 [method, de/newH1VE/griefergames/GrieferGames/setDoAntiScammer, (Z)V]
 [method, de/newH1VE/griefergames/GrieferGames/getColorenum, ()Lde/newH1VE/griefergames/Enum/ColorEnum;]
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
-Rename class net/minecraft/util/EnumChatFormatting[3973,3991]::EnumChatFormatting->EnumChatFormatting
+Rename class net/minecraft/util/EnumChatFormatting[3403,3421]::EnumChatFormatting->EnumChatFormatting
 [method, de/newH1VE/griefergames/GrieferGames/getChatformat, ()Lnet/minecraft/util/EnumChatFormatting;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[4074,4092]::EnumChatFormatting->EnumChatFormatting
+Rename class net/minecraft/util/EnumChatFormatting[3504,3522]::EnumChatFormatting->EnumChatFormatting
 [method, de/newH1VE/griefergames/GrieferGames/getPrefixcolor, ()Lnet/labymod/utils/ModColor;]
 [method, de/newH1VE/griefergames/GrieferGames/setPrefixcolor, (Ljava/lang/String;)V]
 [method, java/io/PrintStream/println, (Ljava/lang/String;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[4456,4474]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/BLACK[4475,4480]::BLACK->BLACK
+Rename class net/minecraft/util/EnumChatFormatting[3886,3904]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/BLACK[3905,3910]::BLACK->BLACK
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[4682,4700]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_GRAY[4701,4710]::DARK_GRAY->DARK_GRAY
+Rename class net/minecraft/util/EnumChatFormatting[4112,4130]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_GRAY[4131,4140]::DARK_GRAY->DARK_GRAY
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[4913,4931]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_RED[4932,4940]::DARK_RED->DARK_RED
+Rename class net/minecraft/util/EnumChatFormatting[4343,4361]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_RED[4362,4370]::DARK_RED->DARK_RED
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[5134,5152]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GRAY[5153,5157]::GRAY->GRAY
+Rename class net/minecraft/util/EnumChatFormatting[4564,4582]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GRAY[4583,4587]::GRAY->GRAY
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[5350,5368]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GREEN[5369,5374]::GREEN->GREEN
+Rename class net/minecraft/util/EnumChatFormatting[4780,4798]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GREEN[4799,4804]::GREEN->GREEN
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[5565,5583]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/LIGHT_PURPLE[5584,5596]::LIGHT_PURPLE->LIGHT_PURPLE
+Rename class net/minecraft/util/EnumChatFormatting[4995,5013]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/LIGHT_PURPLE[5014,5026]::LIGHT_PURPLE->LIGHT_PURPLE
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[5790,5808]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/YELLOW[5809,5815]::YELLOW->YELLOW
+Rename class net/minecraft/util/EnumChatFormatting[5220,5238]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/YELLOW[5239,5245]::YELLOW->YELLOW
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[6020,6038]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/BLUE[6039,6043]::BLUE->BLUE
+Rename class net/minecraft/util/EnumChatFormatting[5450,5468]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/BLUE[5469,5473]::BLUE->BLUE
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, java/lang/String/equals, (Ljava/lang/Object;)Z]
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/GrieferGames/setChatformat, (Lnet/minecraft/util/EnumChatFormatting;)V]
-Rename class net/minecraft/util/EnumChatFormatting[6245,6263]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[6264,6274]::DARK_GREEN->DARK_GREEN
+Rename class net/minecraft/util/EnumChatFormatting[5675,5693]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[5694,5704]::DARK_GREEN->DARK_GREEN
 [method, de/newH1VE/griefergames/GrieferGames/setColorenum, (Lde/newH1VE/griefergames/Enum/ColorEnum;)V]
 [method, net/labymod/api/LabyModAddon/onEnable, ()V]
 [method, java/io/PrintStream/println, (Ljava/lang/String;)V]
@@ -33504,13 +33599,6 @@ Rename field net/minecraft/util/EnumChatFormatting/DARK_GREEN[6264,6274]::DARK_G
 [method, de/newH1VE/griefergames/GrieferGames/modifyChatMessage, (Ljava/lang/Object;)Ljava/lang/Object;]
 [method, net/labymod/api/LabyModAddon/getApi, ()Lnet/labymod/api/LabyModAPI;]
 [method, net/labymod/api/LabyModAPI/registerForgeListener, (Ljava/lang/Object;)V]
-No rename for class net/minecraftforge/fml/common/gameevent/InputEvent/KeyInputEvent
-[method, de/newH1VE/griefergames/GrieferGames/3/onKeyPress, (Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V]
-No rename for class net/minecraftforge/fml/common/gameevent/InputEvent/KeyInputEvent
-[method, org/lwjgl/input/Keyboard/isKeyDown, (I)Z]
-[method, de/newH1VE/griefergames/GrieferGames/isModEnabled, ()Z]
-[method, de/newH1VE/griefergames/GrieferGames/isTabListEnabled, ()Z]
-[method, de/newH1VE/griefergames/chat/AntiScammer/modifyTabList, ()V]
 [method, net/labymod/api/LabyModAddon/getApi, ()Lnet/labymod/api/LabyModAPI;]
 [method, net/labymod/api/LabyModAPI/getEventManager, ()Lnet/labymod/api/EventManager;]
 [method, net/labymod/api/EventManager/register, (Lnet/labymod/api/events/MessageSendEvent;)V]
@@ -33530,28 +33618,28 @@ No rename for class net/minecraftforge/fml/common/gameevent/InputEvent/KeyInputE
 [method, de/newH1VE/griefergames/GrieferGames/modifyChatMessage, (Ljava/lang/Object;)Ljava/lang/Object;]
 [method, de/newH1VE/griefergames/GrieferGames/isModEnabled, ()Z]
 [method, de/newH1VE/griefergames/GrieferGames/getDoAntiScammer, ()Z]
-Rename class net/minecraft/util/IChatComponent[9233,9247]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/IChatComponent[9255,9269]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/IChatComponent[9287,9301]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[9313,9330]::ChatComponentText->ChatComponentText
+Rename class net/minecraft/util/IChatComponent[8209,8223]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/IChatComponent[8231,8245]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/IChatComponent[8262,8276]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[8288,8305]::ChatComponentText->ChatComponentText
 [method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[9397,9415]::getUnformattedText->func_150260_c
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[8372,8390]::getUnformattedText->func_150260_c
 [method, java/util/regex/Matcher/find, ()Z]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9490,9501]::getSiblings->func_150253_a
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[8465,8476]::getSiblings->func_150253_a
 [method, java/util/Collection/size, ()I]
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[9550,9563]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9568,9579]::getSiblings->func_150253_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[8525,8538]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[8543,8554]::getSiblings->func_150253_a
 [method, java/util/List/get, (I)Ljava/lang/Object;]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9638,9649]::getSiblings->func_150253_a
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[8613,8624]::getSiblings->func_150253_a
 [method, java/util/List/get, (I)Ljava/lang/Object;]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9662,9673]::getSiblings->func_150253_a
+Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[8637,8648]::getSiblings->func_150253_a
 [method, java/util/Collection/size, ()I]
 [method, de/newH1VE/griefergames/chat/Chat/doActionModifyChatMessage, (Lnet/minecraft/util/IChatComponent;)Z]
 [method, de/newH1VE/griefergames/chat/Chat/modifyChatMessage, (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;]
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[9851,9869]::getUnformattedText->func_150260_c
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[8826,8844]::getUnformattedText->func_150260_c
 [method, java/lang/String/trim, ()Ljava/lang/String;]
 [method, java/lang/CharSequence/length, ()I]
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[9921,9934]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[8896,8909]::appendSibling->func_150257_a
 [method, java/lang/Throwable/printStackTrace, ()V]
 [method, net/labymod/api/LabyModAddon/onDisable, ()V]
 [method, java/io/PrintStream/println, (Ljava/lang/String;)V]
@@ -33634,16 +33722,11 @@ Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/ut
 [method, java/lang/Object/toString, ()Ljava/lang/String;]
 [method, net/labymod/api/LabyModAddon/saveConfig, ()V]
 [method, java/util/Collection/add, (Ljava/lang/Object;)Z]
+Adding 4 imports
 Import: net.minecraft.client.Minecraft
-Import: net.minecraft.client.gui.Gui
-Import: net.minecraft.client.network.NetworkPlayerInfo
-Import: net.minecraft.entity.player.EntityPlayer
-Import: net.minecraft.scoreboard.IScoreObjectiveCriteria
-Import: net.minecraft.scoreboard.Scoreboard
 Import: net.minecraft.util.ChatComponentText
 Import: net.minecraft.util.EnumChatFormatting
 Import: net.minecraft.util.IChatComponent
-Adding 0 imports
 End  Processing: de/newH1VE/griefergames/GrieferGames.java
 
 Start Processing: de/newH1VE/griefergames/antiScammer/Scammer.java
@@ -33654,14 +33737,14 @@ End  Processing: de/newH1VE/griefergames/antiScammer/Scammer.java
 
 Start Processing: de/newH1VE/griefergames/chat/AntiScammer.java
 Warning: de/newH1VE/griefergames/chat/AntiScammer.java has CRLF line endings; consider switching to LF
-Rename class net/minecraft/util/EnumChatFormatting[1108,1126]::EnumChatFormatting->EnumChatFormatting
-Rename class net/minecraft/util/IChatComponent[1152,1166]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[1182,1199]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[1218,1230]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[1236,1245]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[1248,1256]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[1262,1280]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/RESET[1281,1286]::RESET->RESET
+Rename class net/minecraft/util/EnumChatFormatting[874,892]::EnumChatFormatting->EnumChatFormatting
+Rename class net/minecraft/util/IChatComponent[916,930]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[946,963]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[982,994]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[1000,1009]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[1012,1020]::setColor->func_150238_a
+Rename class net/minecraft/util/EnumChatFormatting[1026,1044]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/RESET[1045,1050]::RESET->RESET
 [method, java/util/regex/Pattern/compile, (Ljava/lang/String;)Ljava/util/regex/Pattern;]
 [method, java/util/regex/Pattern/compile, (Ljava/lang/String;)Ljava/util/regex/Pattern;]
 [method, java/util/regex/Pattern/compile, (Ljava/lang/String;)Ljava/util/regex/Pattern;]
@@ -33671,205 +33754,29 @@ Rename field net/minecraft/util/EnumChatFormatting/RESET[1281,1286]::RESET->RESE
 [method, com/google/gson/GsonBuilder/setPrettyPrinting, ()Lcom/google/gson/GsonBuilder;]
 [method, com/google/gson/GsonBuilder/create, ()Lcom/google/gson/Gson;]
 [method, com/google/gson/reflect/TypeToken/getType, ()Ljava/lang/reflect/Type;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
-[method, java/io/File/exists, ()Z]
-[method, java/io/File/mkdir, ()Z]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, java/io/File/exists, ()Z]
-[method, java/io/File/createNewFile, ()Z]
-[method, java/io/File/equals, (Ljava/lang/Object;)Z]
-[method, java/lang/Object/getClass, ()Ljava/lang/Class;]
-[method, java/lang/Class/getClassLoader, ()Ljava/lang/ClassLoader;]
-[method, java/lang/ClassLoader/getResourceAsStream, (Ljava/lang/String;)Ljava/io/InputStream;]
-[method, java/io/InputStream/available, ()I]
-[method, java/io/InputStream/read, ([B)I]
-[method, java/io/OutputStream/write, ([B)V]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, com/google/gson/Gson/fromJson, (Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;]
-[method, org/apache/commons/io/IOUtils/toString, (Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, java/lang/AutoCloseable/close, ()V]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, java/util/Collection/contains, (Ljava/lang/Object;)Z]
-[method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
-[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
-[method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
-[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
-[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
-[method, java/io/PrintWriter/print, (Ljava/lang/String;)V]
-[method, com/google/gson/Gson/toJson, (Ljava/lang/Object;)Ljava/lang/String;]
-[method, java/io/Flushable/flush, ()V]
-[method, java/lang/AutoCloseable/close, ()V]
-[method, java/lang/Throwable/printStackTrace, ()V]
 [method, de/newH1VE/griefergames/chat/AntiScammer/AntiScammer, ()V]
 FOUND CONSTR method de/newH1VE/griefergames/chat/AntiScammer/AntiScammer ()V de/newH1VE/griefergames/chat/AntiScammer
 [method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
 [method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/isGlobalMessage, (Ljava/lang/String;)Z]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
-[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
-[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
-[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
-Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[6403,6410]::getName->func_70005_c_
-[method, java/lang/String/trim, ()Ljava/lang/String;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
-[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
-[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
-[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
-Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[6605,6612]::getName->func_70005_c_
-[method, java/lang/String/trim, ()Ljava/lang/String;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
 [method, de/newH1VE/griefergames/chat/Chat/getName, ()Ljava/lang/String;]
 [method, de/newH1VE/griefergames/chat/Chat/doAction, (Ljava/lang/String;Ljava/lang/String;)Z]
 [method, de/newH1VE/griefergames/chat/Chat/doActionModifyChatMessage, (Lnet/minecraft/util/IChatComponent;)Z]
-Rename class net/minecraft/util/IChatComponent[7463,7477]::IChatComponent->IChatComponent
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[7518,7536]::getUnformattedText->func_150260_c
-Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[7566,7582]::getFormattedText->func_150254_d
+Rename class net/minecraft/util/IChatComponent[3115,3129]::IChatComponent->IChatComponent
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[3170,3188]::getUnformattedText->func_150260_c
+Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[3218,3234]::getFormattedText->func_150254_d
 [method, de/newH1VE/griefergames/chat/Chat/doAction, (Ljava/lang/String;Ljava/lang/String;)Z]
-[method, de/newH1VE/griefergames/chat/AntiScammer/getScammerOnServer, ()Ljava/util/List;]
-Rename class net/minecraft/client/network/NetHandlerPlayClient[7765,7785]::NetHandlerPlayClient->NetHandlerPlayClient
-[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
-[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
-Rename field net/minecraft/client/entity/EntityPlayerSP/sendQueue[7848,7857]::sendQueue->field_71174_a
-Rename class net/minecraft/client/network/NetworkPlayerInfo[7882,7899]::NetworkPlayerInfo->NetworkPlayerInfo
-Rename method net/minecraft/client/network/NetHandlerPlayClient/getPlayerInfoMap ()Ljava/util/Collection;[7934,7950]::getPlayerInfoMap->func_175106_d
-Rename class net/minecraft/client/network/NetworkPlayerInfo[7982,7999]::NetworkPlayerInfo->NetworkPlayerInfo
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[8088,8102]::getDisplayName->func_178854_k
-Rename class net/minecraft/util/IChatComponent[8135,8149]::IChatComponent->IChatComponent
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[8177,8191]::getDisplayName->func_178854_k
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getGameProfile ()Lcom/mojang/authlib/GameProfile;[8242,8256]::getGameProfile->func_178845_a
-[method, com/mojang/authlib/GameProfile/getName, ()Ljava/lang/String;]
-[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
-[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
-[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
-[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, de/newH1VE/griefergames/chat/AntiScammer/modifyTabList, ()V]
-Rename class net/minecraft/client/network/NetHandlerPlayClient[8974,8994]::NetHandlerPlayClient->NetHandlerPlayClient
-[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
-[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
-Rename field net/minecraft/client/entity/EntityPlayerSP/sendQueue[9057,9066]::sendQueue->field_71174_a
-Rename class net/minecraft/client/network/NetworkPlayerInfo[9091,9108]::NetworkPlayerInfo->NetworkPlayerInfo
-Rename method net/minecraft/client/network/NetHandlerPlayClient/getPlayerInfoMap ()Ljava/util/Collection;[9143,9159]::getPlayerInfoMap->func_175106_d
-Rename class net/minecraft/client/network/NetworkPlayerInfo[9192,9209]::NetworkPlayerInfo->NetworkPlayerInfo
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[9298,9312]::getDisplayName->func_178854_k
-Rename class net/minecraft/util/IChatComponent[9345,9359]::IChatComponent->IChatComponent
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[9387,9401]::getDisplayName->func_178854_k
-Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[9463,9479]::getFormattedText->func_150254_d
-[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
-[method, java/lang/String/indexOf, (Ljava/lang/String;)I]
-[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
-[method, java/lang/String/replaceAll, (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
-Rename class net/minecraft/util/ChatComponentText[9757,9774]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[9853,9871]::getUnformattedText->func_150260_c
-[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9954,9965]::getSiblings->func_150253_a
-[method, java/util/List/get, (I)Ljava/lang/Object;]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[9992,10003]::getSiblings->func_150253_a
-[method, java/util/Collection/size, ()I]
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[10100,10118]::getUnformattedText->func_150260_c
-Rename method net/minecraft/client/network/NetworkPlayerInfo/getGameProfile ()Lcom/mojang/authlib/GameProfile;[10164,10178]::getGameProfile->func_178845_a
-[method, com/mojang/authlib/GameProfile/getName, ()Ljava/lang/String;]
-Rename class net/minecraft/util/IChatComponent[10211,10225]::IChatComponent->IChatComponent
-[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
-[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
-Rename class net/minecraft/util/IChatComponent[10580,10594]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[10609,10626]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[10632,10644]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[10650,10659]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[10662,10670]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[10676,10694]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/YELLOW[10695,10701]::YELLOW->YELLOW
-Rename class net/minecraft/util/IChatComponent[10745,10759]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[10773,10790]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[10797,10809]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[10815,10824]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[10827,10835]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[10841,10859]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/YELLOW[10860,10866]::YELLOW->YELLOW
-Rename class net/minecraft/util/IChatComponent[10910,10924]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[10936,10953]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[10965,10977]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[10983,10992]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[10995,11003]::setColor->func_150238_a
-Rename method net/minecraft/util/ChatStyle/setBold (Ljava/lang/Boolean;)Lnet/minecraft/util/ChatStyle;[11021,11028]::setBold->func_150227_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[11114,11127]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[11134,11147]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[11156,11169]::appendSibling->func_150257_a
-[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
-[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
-Rename class net/minecraft/util/IChatComponent[11604,11618]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[11633,11650]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[11656,11668]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[11674,11683]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[11686,11694]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[11700,11718]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/YELLOW[11719,11725]::YELLOW->YELLOW
-Rename class net/minecraft/util/IChatComponent[11769,11783]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[11797,11814]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[11821,11833]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[11839,11848]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[11851,11859]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[11865,11883]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/YELLOW[11884,11890]::YELLOW->YELLOW
-Rename class net/minecraft/util/IChatComponent[11934,11948]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[11960,11977]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[11989,12001]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[12007,12016]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[12019,12027]::setColor->func_150238_a
-Rename method net/minecraft/util/ChatStyle/setBold (Ljava/lang/Boolean;)Lnet/minecraft/util/ChatStyle;[12045,12052]::setBold->func_150227_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[12138,12151]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[12158,12171]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[12180,12193]::appendSibling->func_150257_a
-[method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[12477,12488]::getSiblings->func_150253_a
-[method, java/util/List/get, (I)Ljava/lang/Object;]
-Rename method net/minecraft/util/IChatComponent/getSiblings ()Ljava/util/List;[12515,12526]::getSiblings->func_150253_a
-[method, java/util/Collection/size, ()I]
-Rename method net/minecraft/client/network/NetworkPlayerInfo/setDisplayName (Lnet/minecraft/util/IChatComponent;)V[12609,12623]::setDisplayName->func_178859_a
-[method, java/lang/Throwable/printStackTrace, ()V]
-[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromPrivateMessage, (Ljava/lang/String;)Ljava/lang/String;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/isPrivateMessage, (Ljava/lang/String;)Z]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/lang/String/trim, ()Ljava/lang/String;]
-[method, java/lang/CharSequence/length, ()I]
-[method, java/util/regex/Matcher/find, ()Z]
-[method, java/lang/String/trim, ()Ljava/lang/String;]
-[method, java/lang/CharSequence/length, ()I]
-[method, java/util/regex/Matcher/find, ()Z]
-Rename class net/minecraft/util/IChatComponent[13903,13917]::IChatComponent->IChatComponent
+[method, de/newH1VE/griefergames/chat/Chat/commandMessage, (Ljava/lang/String;)Z]
+Rename class net/minecraft/util/IChatComponent[3415,3429]::IChatComponent->IChatComponent
 [method, de/newH1VE/griefergames/chat/Chat/modifyChatMessage, (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;]
-Rename class net/minecraft/util/IChatComponent[13936,13950]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/IChatComponent[3448,3462]::IChatComponent->IChatComponent
 [method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
 [method, de/newH1VE/griefergames/GrieferGames/getPrefixcolor, ()Lnet/labymod/utils/ModColor;]
 [method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
 [method, de/newH1VE/griefergames/GrieferGames/getChatformat, ()Lnet/minecraft/util/EnumChatFormatting;]
-Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[14294,14312]::getUnformattedText->func_150260_c
-Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[14342,14358]::getFormattedText->func_150254_d
-Rename class net/minecraft/util/IChatComponent[14368,14382]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[14396,14413]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/getUnformattedText ()Ljava/lang/String;[3806,3824]::getUnformattedText->func_150260_c
+Rename method net/minecraft/util/IChatComponent/getFormattedText ()Ljava/lang/String;[3854,3870]::getFormattedText->func_150254_d
+Rename class net/minecraft/util/IChatComponent[3880,3894]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[3908,3925]::ChatComponentText->ChatComponentText
 [method, de/newH1VE/griefergames/chat/Chat/doAction, (Ljava/lang/String;Ljava/lang/String;)Z]
 [method, de/newH1VE/griefergames/chat/AntiScammer/isGlobalMessage, (Ljava/lang/String;)Z]
 [method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
@@ -33879,31 +33786,31 @@ Rename class net/minecraft/util/ChatComponentText[14396,14413]::ChatComponentTex
 [method, java/lang/CharSequence/length, ()I]
 [method, java/util/Collection/contains, (Ljava/lang/Object;)Z]
 [method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
-Rename class net/minecraft/util/IChatComponent[14877,14891]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[14912,14929]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[14960,14972]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[14978,14987]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[14990,14998]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[15004,15022]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[15023,15027]::GOLD->GOLD
-Rename class net/minecraft/util/IChatComponent[15047,15061]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[15079,15096]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[15133,15145]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[15151,15160]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[15163,15171]::setColor->func_150238_a
-Rename method net/minecraft/util/ChatStyle/setBold (Ljava/lang/Boolean;)Lnet/minecraft/util/ChatStyle;[15189,15196]::setBold->func_150227_a
-Rename class net/minecraft/util/IChatComponent[15227,15241]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[15262,15279]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[15311,15323]::setChatStyle->func_150255_a
-Rename class net/minecraft/util/ChatStyle[15329,15338]::ChatStyle->ChatStyle
-Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[15341,15349]::setColor->func_150238_a
-Rename class net/minecraft/util/EnumChatFormatting[15355,15373]::EnumChatFormatting->EnumChatFormatting
-Rename field net/minecraft/util/EnumChatFormatting/GOLD[15374,15378]::GOLD->GOLD
-Rename class net/minecraft/util/IChatComponent[15398,15412]::IChatComponent->IChatComponent
-Rename class net/minecraft/util/ChatComponentText[15431,15448]::ChatComponentText->ChatComponentText
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[15453,15466]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[15507,15520]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[15533,15546]::appendSibling->func_150257_a
+Rename class net/minecraft/util/IChatComponent[4389,4403]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[4424,4441]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[4472,4484]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[4490,4499]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[4502,4510]::setColor->func_150238_a
+Rename class net/minecraft/util/EnumChatFormatting[4516,4534]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[4535,4539]::GOLD->GOLD
+Rename class net/minecraft/util/IChatComponent[4559,4573]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[4591,4608]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[4645,4657]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[4663,4672]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[4675,4683]::setColor->func_150238_a
+Rename method net/minecraft/util/ChatStyle/setBold (Ljava/lang/Boolean;)Lnet/minecraft/util/ChatStyle;[4701,4708]::setBold->func_150227_a
+Rename class net/minecraft/util/IChatComponent[4739,4753]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[4774,4791]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/setChatStyle (Lnet/minecraft/util/ChatStyle;)Lnet/minecraft/util/IChatComponent;[4823,4835]::setChatStyle->func_150255_a
+Rename class net/minecraft/util/ChatStyle[4841,4850]::ChatStyle->ChatStyle
+Rename method net/minecraft/util/ChatStyle/setColor (Lnet/minecraft/util/EnumChatFormatting;)Lnet/minecraft/util/ChatStyle;[4853,4861]::setColor->func_150238_a
+Rename class net/minecraft/util/EnumChatFormatting[4867,4885]::EnumChatFormatting->EnumChatFormatting
+Rename field net/minecraft/util/EnumChatFormatting/GOLD[4886,4890]::GOLD->GOLD
+Rename class net/minecraft/util/IChatComponent[4910,4924]::IChatComponent->IChatComponent
+Rename class net/minecraft/util/ChatComponentText[4943,4960]::ChatComponentText->ChatComponentText
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[4965,4978]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[5019,5032]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[5045,5058]::appendSibling->func_150257_a
 [method, de/newH1VE/griefergames/chat/AntiScammer/isGlobalMessage, (Ljava/lang/String;)Z]
 [method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
 [method, de/newH1VE/griefergames/GrieferGames/isMessageEnabled, ()Z]
@@ -33911,30 +33818,10 @@ Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/ut
 [method, net/labymod/api/LabyModAPI/displayMessageInChat, (Ljava/lang/String;)V]
 [method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
 [method, de/newH1VE/griefergames/GrieferGames/isPrefixEnabled, ()Z]
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[16023,16036]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[16050,16063]::appendSibling->func_150257_a
-Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[16074,16087]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[5535,5548]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[5562,5575]::appendSibling->func_150257_a
+Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;[5586,5599]::appendSibling->func_150257_a
 [method, de/newH1VE/griefergames/chat/Chat/modifyChatMessage, (Lnet/minecraft/util/IChatComponent;)Lnet/minecraft/util/IChatComponent;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/printPrefixLine, ()V]
-[method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
-[method, de/newH1VE/griefergames/GrieferGames/getPrefixcolor, ()Lnet/labymod/utils/ModColor;]
-[method, de/newH1VE/griefergames/chat/Chat/getApi, ()Lnet/labymod/api/LabyModAPI;]
-[method, net/labymod/api/LabyModAPI/displayMessageInChat, (Ljava/lang/String;)V]
-[method, java/lang/Object/toString, ()Ljava/lang/String;]
-[method, java/lang/Object/toString, ()Ljava/lang/String;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/updateScammerLists, ()V]
-[method, java/lang/Runnable/run, ()V]
-[method, net/labymod/utils/UUIDFetcher/getName, (Ljava/util/UUID;)Ljava/lang/String;]
-[method, java/util/UUID/fromString, (Ljava/lang/String;)Ljava/util/UUID;]
-[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
-[method, net/labymod/utils/UUIDFetcher/getName, (Ljava/util/UUID;)Ljava/lang/String;]
-[method, java/util/UUID/fromString, (Ljava/lang/String;)Ljava/util/UUID;]
-[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
-[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
-[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
-[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
-[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
-[method, java/lang/Thread/start, ()V]
 [method, de/newH1VE/griefergames/chat/Chat/doActionCommandMessage, (Ljava/lang/String;)Z]
 [method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
 [method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
@@ -34136,8 +34023,120 @@ Rename method net/minecraft/util/IChatComponent/appendSibling (Lnet/minecraft/ut
 [method, net/labymod/api/LabyModAPI/displayMessageInChat, (Ljava/lang/String;)V]
 [method, de/newH1VE/griefergames/chat/AntiScammer/printPrefixLine, ()V]
 [method, java/lang/String/startsWith, (Ljava/lang/String;)Z]
-[method, de/newH1VE/griefergames/chat/Chat/commandMessage, (Ljava/lang/String;)Z]
-Import: net.minecraft.client.Minecraft
+[method, de/newH1VE/griefergames/chat/AntiScammer/getScammerList, ()Ljava/util/List;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
+[method, java/io/File/exists, ()Z]
+[method, java/io/File/mkdir, ()Z]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, java/io/File/exists, ()Z]
+[method, java/io/File/createNewFile, ()Z]
+[method, java/io/File/equals, (Ljava/lang/Object;)Z]
+[method, java/lang/Object/getClass, ()Ljava/lang/Class;]
+[method, java/lang/Class/getClassLoader, ()Ljava/lang/ClassLoader;]
+[method, java/lang/ClassLoader/getResourceAsStream, (Ljava/lang/String;)Ljava/io/InputStream;]
+[method, java/io/InputStream/available, ()I]
+[method, java/io/InputStream/read, ([B)I]
+[method, java/io/OutputStream/write, ([B)V]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, com/google/gson/Gson/fromJson, (Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;]
+[method, org/apache/commons/io/IOUtils/toString, (Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljava/lang/String;]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, java/lang/AutoCloseable/close, ()V]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, java/util/Collection/contains, (Ljava/lang/Object;)Z]
+[method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
+[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
+[method, java/lang/String/toLowerCase, ()Ljava/lang/String;]
+[method, java/io/PrintStream/println, (Ljava/lang/String;)V]
+[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
+[method, java/io/PrintWriter/print, (Ljava/lang/String;)V]
+[method, com/google/gson/Gson/toJson, (Ljava/lang/Object;)Ljava/lang/String;]
+[method, java/io/Flushable/flush, ()V]
+[method, java/lang/AutoCloseable/close, ()V]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, de/newH1VE/griefergames/chat/AntiScammer/isGlobalMessage, (Ljava/lang/String;)Z]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
+[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
+[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
+[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[24687,24694]::getName->func_70005_c_
+[method, java/lang/String/trim, ()Ljava/lang/String;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
+[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
+[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
+[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
+Rename method net/minecraft/command/ICommandSender/getName ()Ljava/lang/String;[24889,24896]::getName->func_70005_c_
+[method, java/lang/String/trim, ()Ljava/lang/String;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromGlobalMessage, (Ljava/lang/String;)Ljava/lang/String;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getScammerOnServer, ()Ljava/util/List;]
+Rename class net/minecraft/client/network/NetHandlerPlayClient[25618,25638]::NetHandlerPlayClient->NetHandlerPlayClient
+[method, net/labymod/core/LabyModCore/getMinecraft, ()Lnet/labymod/core/MinecraftAdapter;]
+[method, net/labymod/core/MinecraftAdapter/getPlayer, ()Lnet/minecraft/client/entity/EntityPlayerSP;]
+Rename field net/minecraft/client/entity/EntityPlayerSP/sendQueue[25701,25710]::sendQueue->field_71174_a
+Rename class net/minecraft/client/network/NetworkPlayerInfo[25735,25752]::NetworkPlayerInfo->NetworkPlayerInfo
+Rename method net/minecraft/client/network/NetHandlerPlayClient/getPlayerInfoMap ()Ljava/util/Collection;[25787,25803]::getPlayerInfoMap->func_175106_d
+Rename class net/minecraft/client/network/NetworkPlayerInfo[25835,25852]::NetworkPlayerInfo->NetworkPlayerInfo
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[25941,25955]::getDisplayName->func_178854_k
+Rename class net/minecraft/util/IChatComponent[25988,26002]::IChatComponent->IChatComponent
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getDisplayName ()Lnet/minecraft/util/IChatComponent;[26030,26044]::getDisplayName->func_178854_k
+Rename method net/minecraft/client/network/NetworkPlayerInfo/getGameProfile ()Lcom/mojang/authlib/GameProfile;[26095,26109]::getGameProfile->func_178845_a
+[method, com/mojang/authlib/GameProfile/getName, ()Ljava/lang/String;]
+[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
+[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
+[method, java/lang/String/equals, (Ljava/lang/Object;)Z]
+[method, java/util/Collection/add, (Ljava/lang/Object;)Z]
+[method, java/lang/Throwable/printStackTrace, ()V]
+[method, de/newH1VE/griefergames/chat/AntiScammer/getUserFromPrivateMessage, (Ljava/lang/String;)Ljava/lang/String;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/util/regex/MatchResult/group, (I)Ljava/lang/String;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/isPrivateMessage, (Ljava/lang/String;)Z]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Pattern/matcher, (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/lang/String/trim, ()Ljava/lang/String;]
+[method, java/lang/CharSequence/length, ()I]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, java/lang/String/trim, ()Ljava/lang/String;]
+[method, java/lang/CharSequence/length, ()I]
+[method, java/util/regex/Matcher/find, ()Z]
+[method, de/newH1VE/griefergames/chat/AntiScammer/printPrefixLine, ()V]
+[method, de/newH1VE/griefergames/chat/Chat/getGG, ()Lde/newH1VE/griefergames/GrieferGames;]
+[method, de/newH1VE/griefergames/GrieferGames/getPrefixcolor, ()Lnet/labymod/utils/ModColor;]
+[method, de/newH1VE/griefergames/chat/Chat/getApi, ()Lnet/labymod/api/LabyModAPI;]
+[method, net/labymod/api/LabyModAPI/displayMessageInChat, (Ljava/lang/String;)V]
+[method, java/lang/Object/toString, ()Ljava/lang/String;]
+[method, java/lang/Object/toString, ()Ljava/lang/String;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/updateScammerLists, ()V]
+[method, java/lang/Runnable/run, ()V]
+[method, net/labymod/utils/UUIDFetcher/getName, (Ljava/util/UUID;)Ljava/lang/String;]
+[method, java/util/UUID/fromString, (Ljava/lang/String;)Ljava/util/UUID;]
+[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
+[method, net/labymod/utils/UUIDFetcher/getName, (Ljava/util/UUID;)Ljava/lang/String;]
+[method, java/util/UUID/fromString, (Ljava/lang/String;)Ljava/util/UUID;]
+[method, java/lang/String/equalsIgnoreCase, (Ljava/lang/String;)Z]
+[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
+[method, de/newH1VE/griefergames/chat/AntiScammer/saveScammerFile, (Ljava/util/List;Ljava/io/File;)V]
+[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
+[method, de/newH1VE/griefergames/chat/AntiScammer/loadScammerFile, (Ljava/util/List;Ljava/io/File;)Ljava/util/List;]
+[method, java/lang/Thread/start, ()V]
 Import: net.minecraft.client.network.NetHandlerPlayClient
 Import: net.minecraft.client.network.NetworkPlayerInfo
 Import: net.minecraft.util.*

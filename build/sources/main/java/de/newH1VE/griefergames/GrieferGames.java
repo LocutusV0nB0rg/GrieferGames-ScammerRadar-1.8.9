@@ -1,23 +1,18 @@
 package de.newH1VE.griefergames;
 
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.google.gson.JsonObject;
+
+import de.newH1VE.griefergames.Events.OnTickEvent;
 import de.newH1VE.griefergames.chat.AntiScammer;
 import net.labymod.api.LabyModAddon;
 import net.labymod.api.events.MessageModifyChatEvent;
 import net.labymod.api.events.MessageReceiveEvent;
 import net.labymod.api.events.MessageSendEvent;
-import net.labymod.api.events.TabListEvent;
-import net.labymod.core.LabyModCore;
-import net.labymod.gui.elements.CheckBox;
-import net.labymod.gui.elements.ColorPicker;
 import de.newH1VE.griefergames.Enum.ColorEnum;
 import net.labymod.gui.elements.DropDownMenu;
 import net.labymod.settings.elements.*;
@@ -26,18 +21,9 @@ import net.labymod.utils.Material;
 import net.labymod.utils.ModColor;
 import net.labymod.utils.ServerData;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
-import net.minecraft.client.network.NetworkPlayerInfo;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.scoreboard.IScoreObjectiveCriteria;
-import net.minecraft.scoreboard.Scoreboard;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
-import net.minecraftforge.client.event.GuiOpenEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.InputEvent;
-import org.lwjgl.input.Keyboard;
 
 public class GrieferGames extends LabyModAddon {
     private static GrieferGames griefergames;
@@ -48,7 +34,7 @@ public class GrieferGames extends LabyModAddon {
     private boolean messageenabled = false;
     private boolean tablistenabled = true;
     private boolean doAntiScammer = false;
-    private AntiScammer antiscammer = new AntiScammer();
+    private static AntiScammer antiscammer = new AntiScammer();
     private static Pattern msgStartsWithTime = Pattern.compile("^\\[(\\d{2}\\:){2}\\d{2}\\][^$]*$");
     private ModColor prefixcolor = ModColor.DARK_RED;
     private EnumChatFormatting chatformat = EnumChatFormatting.DARK_RED;
@@ -59,13 +45,17 @@ public class GrieferGames extends LabyModAddon {
         return tablistenabled;
     }
 
-    public void setTabListEnabled(boolean tabListUpdate) {
+    public void setTabListEnabled(boolean tablistenabled) {
         this.tablistenabled = tablistenabled;
     }
 
-
     public boolean isMessageEnabled() {
         return messageenabled;
+    }
+
+    public static AntiScammer getAntiscammer()
+    {
+        return antiscammer;
     }
 
     public boolean isPrefixEnabled() {
@@ -76,11 +66,11 @@ public class GrieferGames extends LabyModAddon {
         this.prefixenabled = prefixenabled;
     }
 
-    private boolean isModEnabled() {
+    public boolean isModEnabled() {
         return modenabled;
     }
 
-    private void setModEnabled(boolean modenabled) {
+    public void setModEnabled(boolean modenabled) {
         this.modenabled = modenabled;
     }
 
@@ -260,20 +250,8 @@ public class GrieferGames extends LabyModAddon {
 
 
 
-        getApi().registerForgeListener(new InputEvent.KeyInputEvent() {
-            @SubscribeEvent
-            public void onKeyPress(InputEvent.KeyInputEvent event) {
-                //LocalDateTime now = LocalDateTime.now();
-                //if(now.isAfter(deactivate))
-                  //  setModEnabled(false);
-                if (Keyboard.isKeyDown(Keyboard.KEY_TAB) && isModEnabled() && isTabListEnabled()) {
-                    antiscammer.modifyTabList();
-                }
 
-
-
-            }
-        });
+        getApi().registerForgeListener(new OnTickEvent());
 
 
         getApi().getEventManager().register(new MessageSendEvent() {
@@ -313,7 +291,6 @@ public class GrieferGames extends LabyModAddon {
 
         try {
             IChatComponent msg = (IChatComponent) o;
-
             IChatComponent time = new ChatComponentText("");
 
             Matcher matcher = msgStartsWithTime.matcher(msg.getUnformattedText());

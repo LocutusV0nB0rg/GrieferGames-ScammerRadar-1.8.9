@@ -2,6 +2,7 @@ package de.newH1VE.griefergames;
 
 
 import java.util.List;
+import java.util.concurrent.ExecutorService;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -47,7 +48,6 @@ public class GrieferGames extends LabyModAddon {
     public void setTabListEnabled(boolean tablistenabled) {
         this.tablistenabled = tablistenabled;
     }
-
 
     public boolean isMessageEnabled() {
         return messageenabled;
@@ -291,7 +291,6 @@ public class GrieferGames extends LabyModAddon {
 
         try {
             IChatComponent msg = (IChatComponent) o;
-
             IChatComponent time = new ChatComponentText("");
 
             Matcher matcher = msgStartsWithTime.matcher(msg.getUnformattedText());

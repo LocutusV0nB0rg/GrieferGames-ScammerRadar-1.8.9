@@ -131,7 +131,6 @@ public class AntiScammer extends Chat {
 
                 if (getGG().isPrefixEnabled()) {
                     newMsg.appendSibling(scammersign).appendSibling(resetMsg).appendSibling(msg);
-
                     return newMsg;
                 }
 
