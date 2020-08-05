@@ -1,6 +1,7 @@
 package de.newH1VE.griefergames;
 
 
+import java.io.File;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -20,7 +21,6 @@ import net.labymod.utils.Consumer;
 import net.labymod.utils.Material;
 import net.labymod.utils.ModColor;
 import net.labymod.utils.ServerData;
-import net.minecraft.client.Minecraft;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IChatComponent;
@@ -29,20 +29,26 @@ public class GrieferGames extends LabyModAddon {
     private static GrieferGames griefergames;
     private String serverIp = "";
     private String secondServerIp = "";
+    private Helper helper;
     private boolean modenabled = true;
     private boolean prefixenabled = true;
     private boolean messageenabled = false;
     private boolean tablistenabled = true;
     private boolean doAntiScammer = false;
-    private Helper helper;
     private static AntiScammer antiscammer = new AntiScammer();
     private static Pattern msgStartsWithTime = Pattern.compile("^\\[(\\d{2}\\:){2}\\d{2}\\][^$]*$");
     private ModColor prefixcolor = ModColor.DARK_RED;
     private EnumChatFormatting chatformat = EnumChatFormatting.DARK_RED;
     private ColorEnum colorenum = ColorEnum.DARK_RED;
+    private static final File onlineScammerFile = new File("LabyMod/antiScammer/onlineScammer.json");
+    private static final File localScammerFile = new File("LabyMod/antiScammer/localScammer.json");
+
+    public void setHelper(Helper helper) {
+        this.helper = helper;
+    }
 
     public Helper getHelper() {
-        return this.helper;
+        return helper;
     }
 
     public boolean isTabListEnabled() {
@@ -210,14 +216,20 @@ public class GrieferGames extends LabyModAddon {
     @Override
     public void onEnable() {
 
+        System.out.println("[GrieferGames AntiScammer] enabled.");
+
         // restrict access by time
         //final LocalDateTime deactivate = LocalDateTime.of(2020, 8, 30, 23, 59);
 
+        //setup helper
+        setHelper(new Helper());
 
-        System.out.println("[GrieferGames AntiScammer] enabled.");
+
+        // initial load of scammerFiles
+        getHelper().loadScammerFile(localScammerFile);
+        getHelper().loadScammerFile(onlineScammerFile);
+
         // set ip
-
-
         setServerIp("griefergames.net");
         setSecondServerIp("griefergames.de");
 
@@ -226,10 +238,11 @@ public class GrieferGames extends LabyModAddon {
 
         // initial update of both scammer lists/files
         try {
-            helper.updateScammerLists();
+            getHelper().updateScammerLists();
         } catch (Exception e) {
             System.err.println(e);
         }
+
 
         this.getApi().getEventManager().registerOnJoin(new Consumer<ServerData>() {
             @Override
@@ -240,6 +253,7 @@ public class GrieferGames extends LabyModAddon {
             }
         });
 
+        // listener for modifying incoming messages
         this.getApi().getEventManager().register(new MessageModifyChatEvent() {
             public Object onModifyChatMessage(Object o) {
 
@@ -252,12 +266,10 @@ public class GrieferGames extends LabyModAddon {
 
         });
 
-
-
-
+        // register eventlistener for tablist updates
         getApi().registerForgeListener(new OnTickEvent());
 
-
+        // listener for sending messages
         getApi().getEventManager().register(new MessageSendEvent() {
             public boolean onSend(String message) {
 
@@ -273,6 +285,7 @@ public class GrieferGames extends LabyModAddon {
             }
         });
 
+        // listener for receiving messages
         getApi().getEventManager().register(new MessageReceiveEvent() {
             public boolean onReceive(String formatted, String unformatted) {
 
@@ -289,6 +302,7 @@ public class GrieferGames extends LabyModAddon {
 
     }
 
+    // check whether message have to be modified
     public Object modifyChatMessage(Object o) {
         if (!(isModEnabled() && getDoAntiScammer()))
             return o;

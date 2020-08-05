@@ -48,8 +48,7 @@ public class AntiScammer extends Chat {
 
 
     public AntiScammer() {
-        onlineScammerList = getHelper().loadScammerFile(onlineScammerList, onlineScammerFile);
-        localScammerList = getHelper().loadScammerFile(localScammerList, localScammerFile);
+        // do nothing ;)
     }
 
     public void setScammerList(List<String> scammerList) {
@@ -158,23 +157,26 @@ public class AntiScammer extends Chat {
 
     @Override
     public boolean doActionCommandMessage(String unformatted) {
+        
+        // check which command has been typed in
+        // possible commands: /scammer {add, remove, help, all, update, reload, check}
 
         if (unformatted.toLowerCase().startsWith("/scammer reload")) {
-            printPrefixLine();
+            getHelper().printPrefixLine();
             getApi().displayMessageInChat(ModColor.WHITE + "Liste wird geladen, bitte warten...");
             Thread thread = new Thread() {
                 public void run() {
                     try {
                         scammerList = new ArrayList<String>();
-                        onlineScammerList = getHelper().loadScammerFile(onlineScammerList, onlineScammerFile);
-                        localScammerList = getHelper().loadScammerFile(localScammerList, localScammerFile);
+                        onlineScammerList = getHelper().loadScammerFile(onlineScammerFile);
+                        localScammerList = getHelper().loadScammerFile(localScammerFile);
 
                         getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde neu geladen.");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
 
                     } catch (Exception e) {
                         getApi().displayMessageInChat(ModColor.WHITE + "Liste konnte nicht geladen werden.");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
 
                         System.err.println(e);
                     }
@@ -185,22 +187,22 @@ public class AntiScammer extends Chat {
 
             return true;
         } else if (unformatted.toLowerCase().startsWith("/scammer update")) {
-            printPrefixLine();
+            getHelper().printPrefixLine();
             getApi().displayMessageInChat(ModColor.WHITE + "Liste wird aktualisiert, bitte warten...");
-            printPrefixLine();
+            getHelper().printPrefixLine();
 
             try {
 
                 getHelper().updateScammerLists();
 
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde aktualisiert.");
-                printPrefixLine();
+                getHelper().printPrefixLine();
 
             } catch (Exception e) {
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 getApi().displayMessageInChat(ModColor.WHITE + "Liste konnte nicht aktualisiert werden.");
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 System.err.println(e);
 
             }
@@ -208,19 +210,19 @@ public class AntiScammer extends Chat {
             return true;
         } else if (unformatted.toLowerCase().startsWith("/scammer add")) {
             String[] commandArray = unformatted.split(" ");
-            printPrefixLine();
+            getHelper().printPrefixLine();
             if (commandArray.length > 3) {
 
                 getApi().displayMessageInChat(
                         ModColor.WHITE + "Bitte immer nur einen Namen angeben (/scammer add NAME)");
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 return true;
             } else if (commandArray.length == 3) {
                 final String playerName = commandArray[2].trim();
                 if (scammerList.contains(playerName.toLowerCase())) {
 
                     getApi().displayMessageInChat(ModColor.WHITE + "Dieser Scammer ist bereits hinterlegt!");
-                    printPrefixLine();
+                    getHelper().printPrefixLine();
                     return true;
                 } else {
                     final UUID playerUUID = UUIDFetcher.getUUID(playerName);
@@ -242,11 +244,11 @@ public class AntiScammer extends Chat {
 
                                     getApi().displayMessageInChat(
                                             ModColor.WHITE + playerName + " wurde als Scammer hinterlegt!");
-                                    printPrefixLine();
+                                    getHelper().printPrefixLine();
                                 } catch (Exception e) {
                                     getApi().displayMessageInChat(
                                             ModColor.WHITE + playerName + " konnte nicht hinterlegt werden.");
-                                    printPrefixLine();
+                                    getHelper().printPrefixLine();
                                     System.err.println(e);
                                 }
                             }
@@ -257,22 +259,22 @@ public class AntiScammer extends Chat {
                     } else {
                         getApi().displayMessageInChat(
                                 ModColor.WHITE + "Der Spielername " + playerName + " konnte nicht gefunden werden!");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
                         return true;
                     }
                 }
             } else {
                 getApi().displayMessageInChat(ModColor.WHITE + "Bitte einen Namen angeben (/scammer add NAME)");
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 return true;
             }
         } else if (unformatted.toLowerCase().startsWith("/scammer remove")) {
             String[] commandArray = unformatted.split(" ");
-            printPrefixLine();
+            getHelper().printPrefixLine();
             if (commandArray.length > 3) {
                 getApi().displayMessageInChat(
                         ModColor.WHITE + "Bitte immer nur einen Namen angeben (/scammer remove NAME)");
-                printPrefixLine();
+                getHelper().printPrefixLine();
             } else if (commandArray.length == 3) {
                 final String playerName = commandArray[2].trim();
                 if (scammerList.contains(playerName.toLowerCase())) {
@@ -288,7 +290,7 @@ public class AntiScammer extends Chat {
                         if (localListIndex < 0) {
                             getApi().displayMessageInChat(ModColor.WHITE + playerName
                                     + " kann nicht gel\u00F6scht werden, da er Online als Scammer hinterlegt wurde!");
-                            printPrefixLine();
+                            getHelper().printPrefixLine();
                         } else {
                             getApi().displayMessageInChat(
                                     ModColor.WHITE + playerName + " wird gel\u00F6scht, bitte warten...");
@@ -305,11 +307,11 @@ public class AntiScammer extends Chat {
 
                                         getApi().displayMessageInChat(
                                                 ModColor.WHITE + playerName + " wurde als Scammer entfernt!");
-                                        printPrefixLine();
+                                        getHelper().printPrefixLine();
                                     } catch (Exception e) {
                                         getApi().displayMessageInChat(
                                                 ModColor.WHITE + playerName + " konnte nicht entfernt werden.");
-                                        printPrefixLine();
+                                        getHelper().printPrefixLine();
                                         System.err.println(e);
                                     }
                                 }
@@ -320,57 +322,45 @@ public class AntiScammer extends Chat {
                     } else {
                         getApi().displayMessageInChat(
                                 ModColor.WHITE + "Der Spielername " + playerName + " konnte nicht gefunden werden!");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
                     }
                 } else {
                     getApi().displayMessageInChat(
                             ModColor.WHITE + "Der Spielername " + playerName + " ist nicht auf der lokalen Liste vorhanden!");
-                    printPrefixLine();
+                    getHelper().printPrefixLine();
                 }
             } else {
                 getApi().displayMessageInChat(ModColor.WHITE + "Bitte einen Namen angeben (/scammer remove NAME)");
-                printPrefixLine();
+                getHelper().printPrefixLine();
             }
 
             return true;
-        } else if (unformatted.toLowerCase().startsWith("/scammer help")) {
+        } else if (unformatted.toLowerCase().startsWith("/scammer help") || unformatted.toLowerCase().equalsIgnoreCase("/scammer")) {
 
-            printPrefixLine();
-            getApi().displayMessageInChat(ModColor.WHITE + "/scammer help - Befehle ausgeben lassen.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer check - Einen Spielernamen anhand der Listen \u00FCberpr\u00FCfen oder alle auf diesem Server durch * sehen.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer add NAME - Einen Spieler zur lokalen Liste hinzuf\u00FCgen.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer remove NAME - Einen Spieler von der lokalen Liste entfernen.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer reload - Scammerliste aus dem Speicher neu laden.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer update - Namen auf den Listen anhand der UUID updaten.");
-            getApi().displayMessageInChat(
-                    ModColor.WHITE + "/scammer all - Alle Spielernamen von der lokalen Liste zeigen.");
-            printPrefixLine();
+            getHelper().printPrefixLine();
+            getHelper().printMenu();
+            getHelper().printPrefixLine();
 
             return true;
 
         } else if (unformatted.toLowerCase().startsWith("/scammer all")) {
-            printPrefixLine();
+            getHelper().printPrefixLine();
 
             for (Scammer scammerobj : localScammerList) {
                 getApi().displayMessageInChat(ModColor.WHITE + scammerobj.name);
             }
 
-            printPrefixLine();
+            getHelper().printPrefixLine();
 
             return true;
         } else if (unformatted.toLowerCase().startsWith("/scammer check")) {
-            printPrefixLine();
+            getHelper().printPrefixLine();
             String[] commandArray = unformatted.split(" ");
             if (commandArray.length > 3 || commandArray.length < 3) {
 
                 getApi().displayMessageInChat(
                         ModColor.WHITE + "Bitte immer einen Namen angeben (/scammer check NAME oder sehe alle Scammer auf diesem Server über /scammer check *)");
-                printPrefixLine();
+                getHelper().printPrefixLine();
             } else if (commandArray.length == 3) {
                 getApi().displayMessageInChat(ModColor.WHITE + "Der eingegebene Name wird \u00FCberpr\u00FCft. Bitte warten ...");
 
@@ -385,12 +375,12 @@ public class AntiScammer extends Chat {
                                     + ModColor.GOLD + "]" + ModColor.WHITE + " " + scammerName);
 
                         }
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
                         return true;
                     }
                     if (scammerOnServer.size() == 0) {
                         getApi().displayMessageInChat(ModColor.WHITE + "Auf diesem Server befinden sich keine Scammer!");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
                         return true;
                     }
 
@@ -409,7 +399,7 @@ public class AntiScammer extends Chat {
                                     getApi().displayMessageInChat(ModColor.WHITE + "Der Spieler " + playerName + " ist als " + ModColor.GOLD + "["
                                             + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
                                             + " auf der [SCAMMER]Radar Liste hinterlegt!");
-                                    printPrefixLine();
+                                    getHelper().printPrefixLine();
 
                                     return true;
                                 }
@@ -418,7 +408,7 @@ public class AntiScammer extends Chat {
                                         + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
                                         + " auf der [SCAMMER]Radar hinterlegt! Sein vorheriger Name war: "
                                         + scammer.name + ". Der Spielername wurde geupdated.");
-                                printPrefixLine();
+                                getHelper().printPrefixLine();
 
                                 return true;
                             }
@@ -434,7 +424,7 @@ public class AntiScammer extends Chat {
                                     getApi().displayMessageInChat(ModColor.WHITE + "Der Spieler " + playerName + " ist als " + ModColor.GOLD + "["
                                             + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
                                             + " auf deiner LOKALEN Liste hinterlegt!");
-                                    printPrefixLine();
+                                    getHelper().printPrefixLine();
 
                                     return true;
                                 }
@@ -443,7 +433,7 @@ public class AntiScammer extends Chat {
                                         + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
                                         + " auf deiner LOKALEN Liste hinterlegt! Sein vorheriger Name war: "
                                         + scammer.name + ". Der Spielername wurde geupdated.");
-                                printPrefixLine();
+                                getHelper().printPrefixLine();
 
                                 return true;
                             }
@@ -453,7 +443,7 @@ public class AntiScammer extends Chat {
                     } catch (Exception ex) {
                         getApi().displayMessageInChat(
                                 ModColor.WHITE + "Dieser Spielername " + playerName + " exisitiert nicht bei Mojang.");
-                        printPrefixLine();
+                        getHelper().printPrefixLine();
                         ex.printStackTrace();
                         return true;
                     }
@@ -461,7 +451,7 @@ public class AntiScammer extends Chat {
 
                 getApi().displayMessageInChat(
                         ModColor.WHITE + "Die UUID von " + playerName + " ist nicht auf den Listen hinterlegt!");
-                printPrefixLine();
+                getHelper().printPrefixLine();
                 return true;
             }
 
@@ -540,15 +530,6 @@ public class AntiScammer extends Chat {
             return true;
 
         return false;
-    }
-
-    public void printPrefixLine() {
-        modcolor = getGG().getPrefixcolor();
-        String prefix = ModColor.RESET + "" + ModColor.GOLD + " [" + ModColor.RESET + "" + modcolor + "" + BOLD
-                + "SCAMMER" + ModColor.RESET + "" + ModColor.GOLD + "] " + ModColor.RESET + "";
-
-        getApi().displayMessageInChat(ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------" + prefix
-                + ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------");
     }
 
 }

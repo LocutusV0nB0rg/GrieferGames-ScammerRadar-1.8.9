@@ -6,6 +6,7 @@ import com.google.gson.reflect.TypeToken;
 import de.newH1VE.griefergames.GrieferGames;
 import de.newH1VE.griefergames.antiScammer.Scammer;
 import net.labymod.core.LabyModCore;
+import net.labymod.utils.ModColor;
 import net.labymod.utils.UUIDFetcher;
 import net.minecraft.client.network.NetHandlerPlayClient;
 import net.minecraft.client.network.NetworkPlayerInfo;
@@ -17,6 +18,8 @@ import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
+import static net.labymod.utils.ModColor.BOLD;
+
 public class Helper {
 
     private static final Gson gson = (new GsonBuilder()).setPrettyPrinting().create();
@@ -27,6 +30,31 @@ public class Helper {
 
     public Helper() {
         // do nothing :)
+    }
+
+    public void printPrefixLine() {
+        ModColor modcolor = GrieferGames.getGrieferGames().getPrefixcolor();
+        String prefix = ModColor.RESET + "" + ModColor.GOLD + " [" + ModColor.RESET + "" + modcolor + "" + BOLD
+                + "SCAMMER" + ModColor.RESET + "" + ModColor.GOLD + "] " + ModColor.RESET + "";
+
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------" + prefix
+                + ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------");
+    }
+
+    public void printMenu() {
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(ModColor.WHITE + "/scammer help - Befehle ausgeben lassen.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer check - Einen Spielernamen anhand der Listen \u00FCberpr\u00FCfen oder alle auf diesem Server durch * sehen.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer add NAME - Einen Spieler zur lokalen Liste hinzuf\u00FCgen.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer remove NAME - Einen Spieler von der lokalen Liste entfernen.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer reload - Scammerliste aus dem Speicher neu laden.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer update - Namen auf den Listen anhand der UUID updaten.");
+        GrieferGames.getGrieferGames().getApi().displayMessageInChat(
+                ModColor.WHITE + "/scammer all - Alle Spielernamen von der lokalen Liste zeigen.");
     }
 
     public void updateScammerLists() {
@@ -62,8 +90,8 @@ public class Helper {
                 }
 
                 GrieferGames.getAntiscammer().setScammerList(new ArrayList<String>());
-                GrieferGames.getAntiscammer().setOnlineScammerList(loadScammerFile(onlineScammerList, onlineScammerFile));
-                GrieferGames.getAntiscammer().setLocalScammerList(loadScammerFile(localScammerList, localScammerFile));
+                GrieferGames.getAntiscammer().setOnlineScammerList(loadScammerFile(onlineScammerFile));
+                GrieferGames.getAntiscammer().setLocalScammerList(loadScammerFile(localScammerFile));
 
 
             }
@@ -73,9 +101,12 @@ public class Helper {
 
     }
 
-    public List<Scammer> loadScammerFile(List<Scammer> _scammerList, File _scammerFile) {
+    public List<Scammer> loadScammerFile(File _scammerFile) {
+
+        List<Scammer> _scammerList = new ArrayList<Scammer>();
 
         List<String> scammerList = GrieferGames.getAntiscammer().getScammerList();
+        boolean isOnlineScammer = false;
 
         if (!scammerFilePath.exists()) {
             try {
@@ -92,6 +123,7 @@ public class Helper {
 
 
                 if (_scammerFile.equals(onlineScammerFile)) {
+                    isOnlineScammer = true;
                     // get local resource as stream
                     InputStream stream = this.getClass().getClassLoader().getResourceAsStream("assets/minecraft/griefergames/scammer/onlineScammer.json");
 
@@ -135,13 +167,19 @@ public class Helper {
                     System.out.println(scammer.name);
                 }
             }
+            if(isOnlineScammer == true)
+                GrieferGames.getAntiscammer().setOnlineScammerList(_scammerList);
+            else
+                GrieferGames.getAntiscammer().setLocalScammerList(_scammerList);
+
             GrieferGames.getAntiscammer().setScammerList(scammerList);
+
             return _scammerList;
         }
         return new ArrayList<Scammer>();
     }
 
-    public static void saveScammerFile(List<Scammer> scammerList, File scammerFile) {
+    public void saveScammerFile(List<Scammer> scammerList, File scammerFile) {
         try {
             PrintWriter w = new PrintWriter(
                     new OutputStreamWriter(new FileOutputStream(scammerFile), StandardCharsets.UTF_8), true);
@@ -153,7 +191,7 @@ public class Helper {
         }
     }
 
-    public static List<String> getScammerOnServer() {
+    public List<String> getScammerOnServer() {
         List<String> scammerServerList = new ArrayList<String>();
         List<String> scammerList = GrieferGames.getAntiscammer().getScammerList();
         NetHandlerPlayClient nethandlerplayclient = LabyModCore.getMinecraft().getPlayer().sendQueue;
