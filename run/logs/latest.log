@@ -1,165 +1,164 @@
-[11:27:07] [main/INFO]: Extra: []
-[11:27:07] [main/INFO]: Found and added coremod: net.labymod.core.asm.LabyModCoreMod
-[11:27:07] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/Tim/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[11:27:07] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:27:07] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:27:07] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[11:27:07] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[11:27:07] [main/INFO]: Forge Mod Loader version 11.15.1.1855 for Minecraft 1.8.9 loading
-[11:27:07] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_131, running on Mac OS X:x86_64:10.15.5, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
-[11:27:07] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[11:27:07] [main/INFO]: Found a command line coremod : net.labymod.core.asm.LabyModCoreMod
-[11:27:08] [main/INFO]: [Debug] Started debug logging
-[11:27:08] [main/WARN]: The coremod net.labymod.core.asm.LabyModCoreMod does not have a MCVersion annotation, it may cause issues with this version of Minecraft
-[11:27:08] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[11:27:08] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[11:27:08] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[11:27:08] [main/INFO]: Injecting location in coremod net.labymod.core.asm.LabyModCoreMod
-[11:27:08] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:27:08] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[11:27:08] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[11:27:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:27:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[11:27:08] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[11:27:08] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[11:27:10] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
-[11:27:10] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[11:27:10] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[11:27:10] [main/INFO]: [Debug] [ADDON] Checksum of GrieferGames.jar: 39a8da7644d51041a3cef72634fcf9e0
-[11:27:10] [main/INFO]: [Debug] [ADDON] Adding GrieferGames.jar to runtime..
-[11:27:10] [main/INFO]: [Debug] [ADDON] Given addon resources: addon.json
-[11:27:10] [main/INFO]: [Debug] [ADDON] Loading resource addon.json: true
-[11:27:10] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[11:27:11] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[11:27:11] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[11:27:11] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[11:27:11] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.main.Main...
-[11:27:11] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[11:27:11] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.Minecraft...
-[11:27:11] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiScreen...
-[11:27:11] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.player.EntityPlayer...
-[11:27:12] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.EntityLivingBase...
-[11:27:12] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.entity.EntityPlayerSP...
-[11:27:12] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.inventory.GuiContainer...
-[11:27:14] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.Item...
-[11:27:18] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.ItemStack...
-[11:27:19] [Client thread/INFO]: LWJGL Version: 2.9.2
-[11:27:21] [Client thread/INFO]: MinecraftForge v11.15.1.1855 Initialized
-[11:27:21] [Client thread/INFO]: Replaced 229 ore recipies
-[11:27:21] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
-[11:27:21] [Client thread/INFO]: Searching /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/run/mods for mods
-[11:27:26] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
-[11:27:26] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at CLIENT
-[11:27:26] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
-[11:27:26] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
-[11:27:27] [Client thread/INFO]: Processing ObjectHolder annotations
-[11:27:27] [Client thread/INFO]: Found 384 ObjectHolder annotations
-[11:27:27] [Client thread/INFO]: Identifying ItemStackHolder annotations
-[11:27:27] [Client thread/INFO]: Found 0 ItemStackHolder annotations
-[11:27:27] [Client thread/INFO]: Configured a dormant chunk cache size of 0
-[11:27:27] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[11:27:27] [Client thread/INFO]: Applying holder lookups
-[11:27:27] [Client thread/INFO]: Holder lookups applied
-[11:27:27] [Client thread/INFO]: Injecting itemstacks
-[11:27:27] [Client thread/INFO]: Itemstack injection complete
-[11:27:27] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ScaledResolution...
-[11:27:27] [Forge Version Check/INFO]: [Forge] Found status: OUTDATED Target: 11.15.1.2318
-[11:27:27] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:27:28] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[11:27:28] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:27:28] [Thread-7/INFO]: OpenAL initialized.
-[11:27:28] [Sound Library Loader/INFO]: Sound engine started
-[11:27:33] [Client thread/INFO]: Max texture size: 16384
-[11:27:33] [Client thread/INFO]: Created: 16x16 textures-atlas
-[11:27:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.model.ModelBiped...
-[11:27:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.ItemRenderer...
-[11:27:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.EntityRenderer...
-[11:27:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.RenderGlobal...
-[11:27:35] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded LabyMod-3.json!
-[11:27:35] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
-[11:27:35] [Client thread/INFO]: [Debug] [LANGUAGE] en_US is not loaded! Trying to load it..
-[11:27:35] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
-[11:27:36] [Client thread/INFO]: [Debug] [LANGUAGE] Detected Minecraft language: en_US
-[11:27:36] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
-[11:27:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Registered 36 cosmetics!
-[11:27:36] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Load whitelist..
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded autotext.json!
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded filters.json!
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded shortcuts.json!
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded playermenu.json!
-[11:27:36] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded tags.json!
-[11:27:37] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiMultiplayer...
-[11:27:37] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded servers.json!
-[11:27:37] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Loaded 177964 whitelisted users.
-[11:27:37] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Successfully loaded all userdata
-[11:27:37] [Thread-10/INFO]: [Debug] [EMOTE] Loaded 123 emotes!
-[11:27:37] [Thread-12/INFO]: [Debug] [LABYMOD_CHAT] Loaded 0 chats!
-[11:27:37] [Thread-14/INFO]: [Debug] [UPDATER] The latest LabyMod version is v3.6.12, you are currently using LabyMod version v3.6.6
-[11:27:37] [Thread-14/INFO]: [Debug] [UPDATER] You are outdated!
-[11:27:37] [Client thread/INFO]: _ByteException
-[11:27:37] [Client thread/INFO]: IchMagBonze
-[11:27:37] [Client thread/INFO]: _RockDog_
-[11:27:37] [Client thread/INFO]: BlckCottonPicker
-[11:27:37] [Client thread/INFO]: 01Percy
-[11:27:37] [Client thread/INFO]: Skyzzzzzz
-[11:27:37] [Client thread/INFO]: dunkelgraueaugen
-[11:27:37] [Client thread/INFO]: 1Argon
-[11:27:37] [Client thread/INFO]: LeqitShotZz
-[11:27:37] [Client thread/INFO]: 1Driip
-[11:27:37] [Client thread/INFO]: Moritz741
-[11:27:37] [Client thread/INFO]: 7Kiritoo
-[11:27:37] [Client thread/INFO]: 1Yasuo
-[11:27:37] [Client thread/INFO]: 1Zaidiaa
-[11:27:37] [Client thread/INFO]: 2Rxtch
-[11:27:37] [Client thread/INFO]: quexgraal
-[11:27:37] [Client thread/INFO]: Sup4me
-[11:27:37] [Client thread/INFO]: 5e5
-[11:27:37] [Client thread/INFO]: 5Minuten
-[11:27:37] [Client thread/INFO]: 7Phantasy
-[11:27:37] [Client thread/INFO]: Bloomlover
-[11:27:37] [Client thread/INFO]: Maigirma
-[11:27:37] [Client thread/INFO]: SavageEasyClient
-[11:27:37] [Client thread/INFO]: AVBT
-[11:27:37] [Client thread/INFO]: BABYDADDY_
-[11:27:37] [Client thread/INFO]: Bank2
-[11:27:37] [Client thread/INFO]: BeeLucky
-[11:27:37] [Client thread/INFO]: LibertySteve
-[11:27:37] [Client thread/INFO]: VanWestfront
-[11:27:37] [Client thread/INFO]: bombayWestG
-[11:27:37] [Client thread/INFO]: lecn78
-[11:27:37] [Client thread/INFO]: JonIsstEdgar
-[11:27:37] [Client thread/INFO]: BuraX45
-[11:27:37] [Client thread/INFO]: BwJesus
-[11:27:37] [Client thread/INFO]: Alkohql
-[11:27:37] [Client thread/INFO]: MrFluffyHit
-[11:27:37] [Client thread/INFO]: CoolDudeness69
-[11:27:37] [Client thread/INFO]: notwuqo
-[11:27:37] [Client thread/INFO]: Cuzimspooky
-[11:27:37] [Client thread/INFO]: zBelxstendes
-[11:27:37] [Client thread/INFO]: x_Anna_x69
-[11:27:37] [Client thread/INFO]: DerChefo
-[11:27:37] [Client thread/INFO]: DerTarikHD
-[11:27:37] [Client thread/INFO]: Direwolfz
-[11:27:37] [Client thread/INFO]: dont_touch_me_
-[11:27:37] [Client thread/INFO]: dragonCW
-[11:27:37] [Client thread/INFO]: HighBetHighWin
-[11:27:37] [Client thread/INFO]: Maasterchief
-[11:27:37] [Client thread/INFO]: FanaticTroll
-[11:27:37] [Client thread/INFO]: leH1VE
-[11:27:37] [Client thread/INFO]: LilaNash
-[11:27:37] [Client thread/INFO]: newH2VE
-[11:27:37] [Client thread/INFO]: [Debug] [ADDON] Enabling and init addon GrieferGames [SCAMMER]Radar...
-[11:27:37] [Client thread/INFO]: [GrieferGames AntiScammer] enabled.
-[11:27:37] [Thread-14/INFO]: [Debug] [UPDATER] Downloaded latest Updater http://dl.labymod.net/latest/install/updater.jar
-[11:27:37] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded GrieferGames [SCAMMER]Radar.json!
-[11:27:37] [Client thread/INFO]: DARK_RED
-[11:27:37] [Client thread/INFO]: [Debug] [ADDON] Successfull loaded addon GrieferGames [SCAMMER]Radar! (took 109 ms)
-[11:27:37] [Client thread/INFO]: [Debug] [ADDON] Enabling and init addon GrieferGames...
-[11:27:37] [Client thread/INFO]: [GrieferGames] enabled.
-[11:27:38] [Client thread/INFO]: [GrieferGames] Couldn't load language file US
-[11:27:38] [Client thread/INFO]: [Debug] [ADDON] Failed enabling addon GrieferGames:
-[11:27:38] [Client thread/ERROR]: catching
+[12:36:28] [main/INFO]: Extra: []
+[12:36:28] [main/INFO]: Found and added coremod: net.labymod.core.asm.LabyModCoreMod
+[12:36:28] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/Tim/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[12:36:28] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:36:28] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:36:28] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:36:28] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[12:36:28] [main/INFO]: Forge Mod Loader version 11.15.1.1855 for Minecraft 1.8.9 loading
+[12:36:28] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_131, running on Mac OS X:x86_64:10.15.5, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
+[12:36:28] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[12:36:28] [main/INFO]: Found a command line coremod : net.labymod.core.asm.LabyModCoreMod
+[12:36:29] [main/INFO]: [Debug] Started debug logging
+[12:36:29] [main/WARN]: The coremod net.labymod.core.asm.LabyModCoreMod does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[12:36:29] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[12:36:29] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[12:36:29] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[12:36:29] [main/INFO]: Injecting location in coremod net.labymod.core.asm.LabyModCoreMod
+[12:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[12:36:29] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[12:36:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:36:29] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[12:36:30] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[12:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[12:36:30] [main/INFO]: [Debug] [ADDON] Checksum of GrieferGames.jar: 39a8da7644d51041a3cef72634fcf9e0
+[12:36:30] [main/INFO]: [Debug] [ADDON] Adding GrieferGames.jar to runtime..
+[12:36:30] [main/INFO]: [Debug] [ADDON] Given addon resources: addon.json
+[12:36:30] [main/INFO]: [Debug] [ADDON] Loading resource addon.json: true
+[12:36:30] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[12:36:31] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[12:36:31] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[12:36:31] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.main.Main...
+[12:36:31] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.Minecraft...
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiScreen...
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.player.EntityPlayer...
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.EntityLivingBase...
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.entity.EntityPlayerSP...
+[12:36:31] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.inventory.GuiContainer...
+[12:36:32] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.Item...
+[12:36:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.ItemStack...
+[12:36:35] [Client thread/INFO]: LWJGL Version: 2.9.2
+[12:36:36] [Client thread/INFO]: MinecraftForge v11.15.1.1855 Initialized
+[12:36:36] [Client thread/INFO]: Replaced 229 ore recipies
+[12:36:36] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[12:36:36] [Client thread/INFO]: Searching /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/run/mods for mods
+[12:36:40] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
+[12:36:40] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at CLIENT
+[12:36:40] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
+[12:36:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
+[12:36:41] [Client thread/INFO]: Processing ObjectHolder annotations
+[12:36:41] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[12:36:41] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[12:36:41] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[12:36:41] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[12:36:41] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[12:36:41] [Client thread/INFO]: Applying holder lookups
+[12:36:41] [Client thread/INFO]: Holder lookups applied
+[12:36:41] [Client thread/INFO]: Injecting itemstacks
+[12:36:41] [Client thread/INFO]: Itemstack injection complete
+[12:36:41] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ScaledResolution...
+[12:36:41] [Forge Version Check/INFO]: [Forge] Found status: OUTDATED Target: 11.15.1.2318
+[12:36:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:36:42] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[12:36:42] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:36:42] [Thread-7/INFO]: OpenAL initialized.
+[12:36:42] [Sound Library Loader/INFO]: Sound engine started
+[12:36:46] [Client thread/INFO]: Max texture size: 16384
+[12:36:46] [Client thread/INFO]: Created: 16x16 textures-atlas
+[12:36:47] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.model.ModelBiped...
+[12:36:48] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.ItemRenderer...
+[12:36:48] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.EntityRenderer...
+[12:36:48] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.RenderGlobal...
+[12:36:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded LabyMod-3.json!
+[12:36:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
+[12:36:48] [Client thread/INFO]: [Debug] [LANGUAGE] en_US is not loaded! Trying to load it..
+[12:36:48] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
+[12:36:49] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
+[12:36:49] [Client thread/INFO]: [Debug] [LANGUAGE] Detected Minecraft language: en_US
+[12:36:49] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
+[12:36:50] [Client thread/INFO]: [Debug] [USER_MANAGER] Registered 36 cosmetics!
+[12:36:50] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Load whitelist..
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded autotext.json!
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded filters.json!
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded shortcuts.json!
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded playermenu.json!
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded tags.json!
+[12:36:50] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiMultiplayer...
+[12:36:50] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded servers.json!
+[12:36:50] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Loaded 177969 whitelisted users.
+[12:36:50] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Successfully loaded all userdata
+[12:36:50] [Thread-10/INFO]: [Debug] [EMOTE] Loaded 123 emotes!
+[12:36:50] [Thread-14/INFO]: [Debug] [UPDATER] The latest LabyMod version is v3.6.12, you are currently using LabyMod version v3.6.6
+[12:36:50] [Thread-14/INFO]: [Debug] [UPDATER] You are outdated!
+[12:36:50] [Client thread/INFO]: [Debug] [ADDON] Failed enabling addon GrieferGames [SCAMMER]Radar:
+[12:36:50] [Client thread/ERROR]: catching
+java.lang.ExceptionInInitializerError
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_131]
+	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_131]
+	at net.labymod.addon.AddonLoader.enableAddon(AddonLoader.java:330) [AddonLoader.class:?]
+	at net.labymod.addon.AddonLoader.enableAddons(AddonLoader.java:309) [AddonLoader.class:?]
+	at net.labymod.main.LabyMod.init(LabyMod.java:257) [LabyMod.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:560) [FMLModContainer.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-17.0.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) [guava-17.0.jar:?]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:211) [LoadController.class:?]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:189) [LoadController.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74) [guava-17.0.jar:?]
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304) [guava-17.0.jar:?]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275) [guava-17.0.jar:?]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:118) [LoadController.class:?]
+	at net.minecraftforge.fml.common.Loader.initializeMods(Loader.java:737) [Loader.class:?]
+	at net.minecraftforge.fml.client.FMLClientHandler.finishMinecraftLoading(FMLClientHandler.java:310) [FMLClientHandler.class:?]
+	at net.minecraft.client.Minecraft.startGame(Minecraft.java:532) [Minecraft.class:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:360) [Minecraft.class:?]
+	at net.minecraft.client.main.Main.main(Main.java:116) [Main.class:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.12.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.12.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_131]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_131]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_131]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_131]
+	at net.minecraftforge.gradle.GradleStartCommon.launch(GradleStartCommon.java:97) [start/:?]
+	at GradleStart.main(GradleStart.java:26) [start/:?]
+Caused by: java.lang.NullPointerException
+	at de.newH1VE.griefergames.chat.Chat.getHelper(Chat.java:15) ~[Chat.class:?]
+	at de.newH1VE.griefergames.chat.AntiScammer.<init>(AntiScammer.java:51) ~[AntiScammer.class:?]
+	at de.newH1VE.griefergames.GrieferGames.<clinit>(GrieferGames.java:38) ~[GrieferGames.class:?]
+	... 48 more
+[12:36:50] [Client thread/INFO]: Caused by: java.lang.NullPointerException
+[12:36:50] [Client thread/INFO]: [Debug] [ADDON] Enabling and init addon GrieferGames...
+[12:36:50] [Client thread/INFO]: [GrieferGames] enabled.
+[12:36:50] [Thread-14/INFO]: [Debug] [UPDATER] Downloaded latest Updater http://dl.labymod.net/latest/install/updater.jar
+[12:36:50] [Client thread/INFO]: [GrieferGames] Couldn't load language file US
+[12:36:50] [Client thread/INFO]: [Debug] [ADDON] Failed enabling addon GrieferGames:
+[12:36:50] [Client thread/ERROR]: catching
 java.lang.NoClassDefFoundError: jy
 	at de.wuzlwuz.griefergames.GrieferGames.onEnable(GrieferGames.java:278) ~[GrieferGames.class:?]
 	at net.labymod.addon.AddonLoader.enableAddon(AddonLoader.java:349) [AddonLoader.class:?]
@@ -218,103 +217,52 @@ Caused by: java.lang.NullPointerException
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[?:1.8.0_131]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[?:1.8.0_131]
 	... 47 more
-[11:27:38] [Client thread/INFO]: Caused by: java.lang.ClassNotFoundException: jy
-[11:27:38] [Client thread/INFO]: Caused by: java.lang.NullPointerException
-[11:27:38] [Client thread/WARN]: =============================================================
-[11:27:38] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
-[11:27:38] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
-[11:27:38] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
-[11:27:38] [Client thread/WARN]: =============================================================
-[11:27:38] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
-[11:27:38] [Client thread/INFO]: [Debug] [DISCORD] Initialize discord rpc..
-[11:27:38] [Client thread/INFO]: [Debug] [DISCORD] Detected OS version: MAC
-[11:27:38] [Client thread/INFO]: [Debug] [DISCORD] Discord lib destination: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib
-[11:27:38] [Client thread/INFO]: [Debug] [DISCORD] Downloading latest discord library: http://dl.labymod.net/latest/install/discord/mac.dylib
-[11:27:38] [Thread-18/INFO]: [Debug] [DISCORD] Download latest discord library..
-[11:27:38] [Thread-18/ERROR]: catching
+[12:36:50] [Client thread/INFO]: Caused by: java.lang.ClassNotFoundException: jy
+[12:36:50] [Client thread/INFO]: Caused by: java.lang.NullPointerException
+[12:36:51] [Client thread/WARN]: =============================================================
+[12:36:51] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[12:36:51] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[12:36:51] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[12:36:51] [Client thread/WARN]: =============================================================
+[12:36:51] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
+[12:36:51] [Client thread/INFO]: [Debug] [DISCORD] Initialize discord rpc..
+[12:36:51] [Client thread/INFO]: [Debug] [DISCORD] Detected OS version: MAC
+[12:36:51] [Client thread/INFO]: [Debug] [DISCORD] Discord lib destination: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib
+[12:36:51] [Client thread/INFO]: [Debug] [DISCORD] Downloading latest discord library: http://dl.labymod.net/latest/install/discord/mac.dylib
+[12:36:51] [Thread-17/INFO]: [Debug] [DISCORD] Download latest discord library..
+[12:36:51] [Thread-17/ERROR]: catching
 java.io.FileNotFoundException: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib (No such file or directory)
 	at java.io.FileOutputStream.open0(Native Method) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.open(FileOutputStream.java:270) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162) ~[?:1.8.0_131]
 	at net.labymod.discordapp.api.DiscordLibraryProvider.run(DiscordLibraryProvider.java:70) [DiscordLibraryProvider.class:?]
-[11:27:38] [Thread-18/INFO]: [Debug] [DISCORD] No Discord library found!
-[11:27:39] [Client thread/INFO]: Injecting itemstacks
-[11:27:39] [Client thread/INFO]: Itemstack injection complete
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
-[11:27:39] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
-[11:27:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
-[11:27:39] [Client thread/INFO]: SoundSystem shutting down...
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] Invalid session
-[11:27:39] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for e10ba356-0952-343e-8ccb-a3b6e69bf75e
-[11:27:39] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Saved 0 chats!
-[11:27:39] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 60 PacketDisconnect
-[11:27:39] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[11:27:39] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[11:27:39] [Thread-19/INFO]: Initializing LWJGL OpenAL
-[11:27:39] [Thread-19/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[11:27:39] [Thread-19/INFO]: OpenAL initialized.
-[11:27:40] [Sound Library Loader/INFO]: Sound engine started
-[11:27:44] [Client thread/INFO]: Max texture size: 16384
-[11:27:45] [Client thread/INFO]: Created: 512x512 textures-atlas
-[11:27:45] [Thread-15/INFO]: _ByteException
-[11:27:45] [Thread-15/INFO]: zKryptoxX
-[11:27:45] [Thread-15/INFO]: _RockDog_
-[11:27:45] [Thread-15/INFO]: BlckCottonPicker
-[11:27:45] [Thread-15/INFO]: 01Percy
-[11:27:45] [Thread-15/INFO]: Skyzzzzzz
-[11:27:45] [Thread-15/INFO]: dunkelgraueaugen
-[11:27:45] [Thread-15/INFO]: 1Argon
-[11:27:45] [Thread-15/INFO]: LeqitShotZz
-[11:27:45] [Thread-15/INFO]: 1Driip
-[11:27:45] [Thread-15/INFO]: Moritz741
-[11:27:45] [Thread-15/INFO]: 7Kiritoo
-[11:27:45] [Thread-15/INFO]: 1Yasuo
-[11:27:45] [Thread-15/INFO]: 1Zaidiaa
-[11:27:45] [Thread-15/INFO]: 2Rxtch
-[11:27:45] [Thread-15/INFO]: quexgraal
-[11:27:45] [Thread-15/INFO]: Sup4me
-[11:27:45] [Thread-15/INFO]: 5e5
-[11:27:45] [Thread-15/INFO]: 5Minuten
-[11:27:45] [Thread-15/INFO]: 7Phantasy
-[11:27:45] [Thread-15/INFO]: Bloomlover
-[11:27:45] [Thread-15/INFO]: Maigirma
-[11:27:45] [Thread-15/INFO]: SavageEasyClient
-[11:27:45] [Thread-15/INFO]: AVBT
-[11:27:45] [Thread-15/INFO]: BABYDADDY_
-[11:27:45] [Thread-15/INFO]: Bank2
-[11:27:45] [Thread-15/INFO]: BeeLucky
-[11:27:45] [Thread-15/INFO]: LibertySteve
-[11:27:45] [Thread-15/INFO]: VanWestfront
-[11:27:45] [Thread-15/INFO]: bombayWestG
-[11:27:45] [Thread-15/INFO]: lecn78
-[11:27:45] [Thread-15/INFO]: JonIsstEdgar
-[11:27:45] [Thread-15/INFO]: BuraX45
-[11:27:45] [Thread-15/INFO]: BwJesus
-[11:27:45] [Thread-15/INFO]: Alkohql
-[11:27:45] [Thread-15/INFO]: MrFluffyHit
-[11:27:45] [Thread-15/INFO]: CoolDudeness69
-[11:27:45] [Thread-15/INFO]: notwuqo
-[11:27:45] [Thread-15/INFO]: Cuzimspooky
-[11:27:45] [Thread-15/INFO]: zBelxstendes
-[11:27:45] [Thread-15/INFO]: DerAlien
-[11:27:45] [Thread-15/INFO]: DerChefo
-[11:27:45] [Thread-15/INFO]: DerTarikHD
-[11:27:45] [Thread-15/INFO]: Direwolfz
-[11:27:45] [Thread-15/INFO]: dont_touch_me_
-[11:27:45] [Thread-15/INFO]: dragonCW
-[11:27:45] [Thread-15/INFO]: HighBetHighWin
-[11:27:45] [Thread-15/INFO]: Maasterchief
-[11:27:45] [Thread-15/INFO]: FanaticTroll
-[11:27:45] [Thread-15/INFO]: leH1VE
-[11:27:45] [Thread-15/INFO]: LilaNash
-[11:27:45] [Thread-15/INFO]: newH2VE
-[11:27:46] [pool-12-thread-1/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/twitter.png
-[11:27:46] [pool-12-thread-2/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/discord.png
-[11:27:46] [pool-12-thread-3/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/shop.png
+[12:36:51] [Thread-17/INFO]: [Debug] [DISCORD] No Discord library found!
+[12:36:51] [Client thread/INFO]: Injecting itemstacks
+[12:36:51] [Client thread/INFO]: Itemstack injection complete
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
+[12:36:51] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
+[12:36:51] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] Invalid session
+[12:36:51] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for 2b98548a-5e09-3029-b082-b4c99d31d926
+[12:36:51] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Create new log file for 2b98548a-5e09-3029-b082-b4c99d31d926
+[12:36:51] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Saved 0 chats!
+[12:36:51] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 60 PacketDisconnect
+[12:36:51] [Client thread/INFO]: SoundSystem shutting down...
+[12:36:51] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[12:36:51] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[12:36:52] [Thread-18/INFO]: Initializing LWJGL OpenAL
+[12:36:52] [Thread-18/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[12:36:52] [Thread-18/INFO]: OpenAL initialized.
+[12:36:52] [Sound Library Loader/INFO]: Sound engine started
+[12:36:56] [Client thread/INFO]: Max texture size: 16384
+[12:36:57] [Client thread/INFO]: Created: 512x512 textures-atlas
+[12:36:57] [pool-11-thread-1/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/twitter.png
+[12:36:57] [pool-11-thread-2/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/discord.png
+[12:36:57] [pool-11-thread-3/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/shop.png

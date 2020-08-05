@@ -2,13 +2,13 @@ package de.newH1VE.griefergames;
 
 
 import java.util.List;
-import java.util.concurrent.ExecutorService;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
 import de.newH1VE.griefergames.Events.OnTickEvent;
 import de.newH1VE.griefergames.chat.AntiScammer;
+import de.newH1VE.griefergames.helper.Helper;
 import net.labymod.api.LabyModAddon;
 import net.labymod.api.events.MessageModifyChatEvent;
 import net.labymod.api.events.MessageReceiveEvent;
@@ -34,12 +34,16 @@ public class GrieferGames extends LabyModAddon {
     private boolean messageenabled = false;
     private boolean tablistenabled = true;
     private boolean doAntiScammer = false;
+    private Helper helper;
     private static AntiScammer antiscammer = new AntiScammer();
     private static Pattern msgStartsWithTime = Pattern.compile("^\\[(\\d{2}\\:){2}\\d{2}\\][^$]*$");
     private ModColor prefixcolor = ModColor.DARK_RED;
     private EnumChatFormatting chatformat = EnumChatFormatting.DARK_RED;
     private ColorEnum colorenum = ColorEnum.DARK_RED;
-    private Minecraft mc;
+
+    public Helper getHelper() {
+        return this.helper;
+    }
 
     public boolean isTabListEnabled() {
         return tablistenabled;
@@ -222,7 +226,7 @@ public class GrieferGames extends LabyModAddon {
 
         // initial update of both scammer lists/files
         try {
-            antiscammer.updateScammerLists();
+            helper.updateScammerLists();
         } catch (Exception e) {
             System.err.println(e);
         }

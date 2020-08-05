@@ -1,6 +1,7 @@
 package de.newH1VE.griefergames.chat;
 
 import de.newH1VE.griefergames.GrieferGames;
+import de.newH1VE.griefergames.helper.Helper;
 import net.labymod.api.LabyModAPI;
 import net.labymod.servermanager.ChatDisplayAction;
 import net.minecraft.util.IChatComponent;
@@ -8,6 +9,10 @@ import net.minecraft.util.IChatComponent;
 public class Chat {
 	protected GrieferGames getGG() {
 		return GrieferGames.getGrieferGames();
+	}
+
+	protected Helper getHelper() {
+		return GrieferGames.getGrieferGames().getHelper();
 	}
 
 	protected LabyModAPI getApi() {

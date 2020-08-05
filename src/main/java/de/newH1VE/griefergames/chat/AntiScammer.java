@@ -4,22 +4,15 @@ package de.newH1VE.griefergames.chat;
 import static net.labymod.utils.ModColor.BOLD;
 
 import java.io.*;
-import java.lang.reflect.Type;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.minecraft.client.network.NetHandlerPlayClient;
-import net.minecraft.client.network.NetworkPlayerInfo;
 import net.minecraft.util.*;
-import org.apache.commons.io.IOUtils;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 import de.newH1VE.griefergames.antiScammer.Scammer;
 import net.labymod.core.LabyModCore;
 import net.labymod.utils.ModColor;
@@ -31,8 +24,7 @@ public class AntiScammer extends Chat {
 
     ModColor modcolor = null;
     EnumChatFormatting chatformat = null;
-    IChatComponent resetMsg = new ChatComponentText(" ")
-            .setChatStyle(new ChatStyle().setColor(EnumChatFormatting.RESET));
+    IChatComponent resetMsg = new ChatComponentText(" ").setChatStyle(new ChatStyle().setColor(EnumChatFormatting.RESET));
 
 
     private static Pattern msgUserGlobalChatRegex = Pattern.compile("^([A-Za-z\\-]+\\+?) \\u2503 ((\\u007E)?\\w{1,16})");
@@ -44,23 +36,45 @@ public class AntiScammer extends Chat {
             "^([A-Za-z\\-]+\\+?) \\u2503 ((\\u007E)?\\w{1,16}) hat dir \\$((?:[1-9]\\d{0,2}(?:,\\d{1,3})*|0)(?:\\.\\d+)?) gegeben\\.$");
     private static Pattern privateMessageSentRegex = Pattern
             .compile("^\\[mir -> ([A-Za-z\\-]+\\+?) \\u2503 ((\\u007E)?\\w{1,16})\\](.*)$");
-    private static Pattern antiMagixPrefixRegex = Pattern.compile("([A-Za-z\\-]+\\+?) \\u2503 ((\\u007E)?\\w{1,16})");
-    private String defaultAMPTablistReplacement = "%CLEAN%";
 
 
     List<String> scammerList = new ArrayList<String>();
     List<Scammer> onlineScammerList = new ArrayList<Scammer>();
     List<Scammer> localScammerList = new ArrayList<Scammer>();
-    private static final File scammerFilePath = new File("LabyMod/antiScammer");
+
     private static final File onlineScammerFile = new File("LabyMod/antiScammer/onlineScammer.json");
     private static final File localScammerFile = new File("LabyMod/antiScammer/localScammer.json");
     private static final Gson gson = (new GsonBuilder()).setPrettyPrinting().create();
-    Type listType = new TypeToken<ArrayList<Scammer>>() { }.getType();
 
 
     public AntiScammer() {
-        onlineScammerList = loadScammerFile(onlineScammerList, onlineScammerFile);
-        localScammerList = loadScammerFile(localScammerList, localScammerFile);
+        onlineScammerList = getHelper().loadScammerFile(onlineScammerList, onlineScammerFile);
+        localScammerList = getHelper().loadScammerFile(localScammerList, localScammerFile);
+    }
+
+    public void setScammerList(List<String> scammerList) {
+        this.scammerList = scammerList;
+    }
+
+    public List<Scammer> getOnlineScammerList() {
+        return onlineScammerList;
+    }
+
+    public void setOnlineScammerList(List<Scammer> onlineScammerList) {
+        this.onlineScammerList = onlineScammerList;
+    }
+
+    public List<Scammer> getLocalScammerList() {
+        return localScammerList;
+    }
+
+    public void setLocalScammerList(List<Scammer> localScammerList) {
+        this.localScammerList = localScammerList;
+    }
+
+    public List<String> getScammerList()
+    {
+        return scammerList;
     }
 
     @Override
@@ -152,8 +166,8 @@ public class AntiScammer extends Chat {
                 public void run() {
                     try {
                         scammerList = new ArrayList<String>();
-                        onlineScammerList = loadScammerFile(onlineScammerList, onlineScammerFile);
-                        localScammerList = loadScammerFile(localScammerList, localScammerFile);
+                        onlineScammerList = getHelper().loadScammerFile(onlineScammerList, onlineScammerFile);
+                        localScammerList = getHelper().loadScammerFile(localScammerList, localScammerFile);
 
                         getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde neu geladen.");
                         printPrefixLine();
@@ -177,7 +191,7 @@ public class AntiScammer extends Chat {
 
             try {
 
-                updateScammerLists();
+                getHelper().updateScammerLists();
 
                 printPrefixLine();
                 getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde aktualisiert.");
@@ -224,7 +238,7 @@ public class AntiScammer extends Chat {
                                         System.out.println(scammer.name);
                                     }
 
-                                    saveScammerFile(localScammerList, localScammerFile);
+                                    getHelper().saveScammerFile(localScammerList, localScammerFile);
 
                                     getApi().displayMessageInChat(
                                             ModColor.WHITE + playerName + " wurde als Scammer hinterlegt!");
@@ -287,7 +301,7 @@ public class AntiScammer extends Chat {
                                         scammerList.remove(playerName.toLowerCase());
                                         localScammerList.remove(scammerListIndex);
 
-                                        saveScammerFile(localScammerList, localScammerFile);
+                                        getHelper().saveScammerFile(localScammerList, localScammerFile);
 
                                         getApi().displayMessageInChat(
                                                 ModColor.WHITE + playerName + " wurde als Scammer entfernt!");
@@ -363,7 +377,7 @@ public class AntiScammer extends Chat {
                 final String playerName = commandArray[2].trim();
 
                 if (playerName.equals("*")) {
-                    List<String> scammerOnServer = getScammerOnServer();
+                    List<String> scammerOnServer = getHelper().getScammerOnServer();
                     if (scammerOnServer.size() > 0) {
                         getApi().displayMessageInChat(ModColor.WHITE + "Folgende Scammer befinden sich auf diesem Server:");
                         for (String scammerName : scammerOnServer) {
@@ -390,7 +404,7 @@ public class AntiScammer extends Chat {
                             if (scammer.uuid.equals(playerUUID.toString())) {
                                 if (playerName.equals(scammer.name)) {
                                     scammer.name = playerName;
-                                    saveScammerFile(onlineScammerList, onlineScammerFile);
+                                    getHelper().saveScammerFile(onlineScammerList, onlineScammerFile);
 
                                     getApi().displayMessageInChat(ModColor.WHITE + "Der Spieler " + playerName + " ist als " + ModColor.GOLD + "["
                                             + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
@@ -415,7 +429,7 @@ public class AntiScammer extends Chat {
                                 if (playerName.equals(scammer.name)) {
                                     String oldName = scammer.name;
                                     scammer.name = playerName;
-                                    saveScammerFile(localScammerList, localScammerFile);
+                                    getHelper().saveScammerFile(localScammerList, localScammerFile);
 
                                     getApi().displayMessageInChat(ModColor.WHITE + "Der Spieler " + playerName + " ist als " + ModColor.GOLD + "["
                                             + getGG().getPrefixcolor() + BOLD.toString() + "SCAMMER" + ModColor.GOLD + "]" + ModColor.WHITE
@@ -460,103 +474,20 @@ public class AntiScammer extends Chat {
         return false;
     }
 
-    public List<String> getScammerList()
-    {
-        return scammerList;
-    }
-
-    private List<Scammer> loadScammerFile(List<Scammer> _scammerList, File _scammerFile) {
-
-
-        if (!scammerFilePath.exists()) {
-            try {
-                scammerFilePath.mkdir();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
-        }
-
-        if (!_scammerFile.exists()) {
-            try {
-                _scammerFile.createNewFile();
-
-
-                if (_scammerFile.equals(onlineScammerFile)) {
-                    // get local resource as stream
-                    InputStream stream = this.getClass().getClassLoader().getResourceAsStream("assets/minecraft/griefergames/scammer/onlineScammer.json");
-
-
-                    // create byte array from stream
-                    byte[] buffer = new byte[stream.available()];
-                    stream.read(buffer);
-
-                    // write buffer to file
-                    @SuppressWarnings("resource")
-                    OutputStream outStream = new FileOutputStream(onlineScammerFile);
-                    outStream.write(buffer);
-                }
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }
-
-
-        FileInputStream stream = null;
-        try {
-            stream = new FileInputStream(_scammerFile);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            _scammerList = gson.fromJson(IOUtils.toString(stream, StandardCharsets.UTF_8), listType);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        } finally {
-            try {
-                stream.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        if (_scammerList != null) {
-            for (Scammer scammer : _scammerList) {
-                if (!scammerList.contains(scammer.name.toLowerCase())) {
-                    scammerList.add(scammer.name.toLowerCase());
-                    System.out.println(scammer.name);
-                }
-            }
-            return _scammerList;
-        }
-        return new ArrayList<Scammer>();
-    }
-
-    public void saveScammerFile(List<Scammer> scammerList, File scammerFile) {
-        try {
-            PrintWriter w = new PrintWriter(
-                    new OutputStreamWriter(new FileOutputStream(scammerFile), StandardCharsets.UTF_8), true);
-            w.print(gson.toJson(scammerList));
-            w.flush();
-            w.close();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
 
     private boolean isGlobalMessage(String unformatted) {
-        Matcher matcher = msgUserGlobalChatRegex.matcher(unformatted);
-        Matcher matcher2 = msgUserGlobalChatClanRegex.matcher(unformatted);
-        Matcher matcher3 = playerPaymentReceiveRegexp.matcher(unformatted);
+        Matcher matcherGlobal = msgUserGlobalChatRegex.matcher(unformatted);
+        Matcher matcherGlobalClan = msgUserGlobalChatClanRegex.matcher(unformatted);
+        Matcher matcherPaymentReceive = playerPaymentReceiveRegexp.matcher(unformatted);
 
-        if (matcher3.find()) {
+        if (matcherPaymentReceive.find()) {
             return false;
         }
 
-        if (matcher.find() && !getUserFromGlobalMessage(unformatted)
+        if (matcherGlobal.find() && !getUserFromGlobalMessage(unformatted)
                 .equalsIgnoreCase(LabyModCore.getMinecraft().getPlayer().getName().trim())) {
             return true;
-        } else if (matcher2.find() && !getUserFromGlobalMessage(unformatted)
+        } else if (matcherGlobalClan.find() && !getUserFromGlobalMessage(unformatted)
                 .equalsIgnoreCase(LabyModCore.getMinecraft().getPlayer().getName().trim())) {
             return true;
         }
@@ -573,41 +504,6 @@ public class AntiScammer extends Chat {
             displayName = msgUserGlobalChatClan.group(3);
         }
         return displayName;
-    }
-
-    public List<String> getScammerOnServer() {
-        List<String> scammerServerList = new ArrayList<String>();
-        NetHandlerPlayClient nethandlerplayclient = LabyModCore.getMinecraft().getPlayer().sendQueue;
-        Collection<NetworkPlayerInfo> playerMap = nethandlerplayclient.getPlayerInfoMap();
-        try {
-            for (NetworkPlayerInfo player : playerMap) {
-                boolean found = false;
-                if (player.getDisplayName() != null) {
-                    IChatComponent playerDisplayName = player.getDisplayName();
-
-                    String playerName = player.getGameProfile().getName();
-
-                    for (Scammer scammer : onlineScammerList) {
-                        if (playerName.equals(scammer.name)) {
-                            scammerServerList.add(playerName);
-                        }
-                    }
-
-                    for (Scammer scammer : localScammerList) {
-
-                        if (playerName.equals(scammer.name)) {
-                            scammerServerList.add(playerName);
-                        }
-                    }
-
-                }
-
-            }
-
-        } catch (NullPointerException ex) {
-            ex.printStackTrace();
-        }
-        return scammerServerList;
     }
 
 
@@ -653,48 +549,6 @@ public class AntiScammer extends Chat {
 
         getApi().displayMessageInChat(ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------" + prefix
                 + ModColor.BLACK + BOLD.toString() + "\u00a74\u00a7l\u00a7m----------");
-    }
-
-    public void updateScammerLists() {
-
-        Thread thread = new Thread() {
-            public void run() {
-                boolean changedOnlineScammerList = false;
-                boolean changedLocalScammerList = false;
-
-                for (Scammer scammer : onlineScammerList) {
-                    String playerName = UUIDFetcher.getName(UUID.fromString(scammer.uuid));
-                    if (!playerName.equalsIgnoreCase(scammer.name)) {
-                        scammer.name = playerName;
-                        changedOnlineScammerList = true;
-                        // getApi().displayMessageInChat("Changed:" + playerName);
-                    }
-                }
-                for (Scammer scammer : localScammerList) {
-                    String playerName = UUIDFetcher.getName(UUID.fromString(scammer.uuid));
-                    if (!playerName.equalsIgnoreCase(scammer.name)) {
-                        scammer.name = playerName;
-                        changedLocalScammerList = true;
-                        // getApi().displayMessageInChat("Changed:" + playerName);
-                    }
-                }
-                if (changedOnlineScammerList) {
-
-                    saveScammerFile(onlineScammerList, onlineScammerFile);
-                }
-                if (changedLocalScammerList) {
-                    saveScammerFile(localScammerList, localScammerFile);
-                }
-
-                scammerList = new ArrayList<String>();
-                onlineScammerList = loadScammerFile(onlineScammerList, onlineScammerFile);
-                localScammerList = loadScammerFile(localScammerList, localScammerFile);
-
-
-            }
-        };
-
-        thread.start();
     }
 
 }
