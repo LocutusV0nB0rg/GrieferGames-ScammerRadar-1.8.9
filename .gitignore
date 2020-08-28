@@ -3,7 +3,6 @@ out
 libs
 *.iml
 *.ipr
-run
 *.txt
 *.bat
 *.iws
