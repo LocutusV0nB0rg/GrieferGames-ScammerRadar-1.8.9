@@ -8,7 +8,6 @@ libs
 *.iws
 gradlew
 *.xml
-.gradle
 gradle
 target
 eclipse
