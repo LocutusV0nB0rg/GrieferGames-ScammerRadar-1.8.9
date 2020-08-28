@@ -1,6 +1,9 @@
 {
   "config": {
-    "prefix color": "DARK_RED",
-    "message enabled": false
+    "prefix color": "GREEN",
+    "message enabled": true,
+    "enabled": true,
+    "tablist enabled": true,
+    "prefix enabled": true
   }
 }

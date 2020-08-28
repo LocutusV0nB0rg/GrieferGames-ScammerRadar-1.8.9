@@ -11,8 +11,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import net.minecraft.util.*;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import de.newH1VE.griefergames.antiScammer.Scammer;
 import net.labymod.core.LabyModCore;
 import net.labymod.utils.ModColor;
@@ -44,7 +42,6 @@ public class AntiScammer extends Chat {
 
     private static final File onlineScammerFile = new File("LabyMod/antiScammer/onlineScammer.json");
     private static final File localScammerFile = new File("LabyMod/antiScammer/localScammer.json");
-    private static final Gson gson = (new GsonBuilder()).setPrettyPrinting().create();
 
 
     public AntiScammer() {
@@ -392,7 +389,7 @@ public class AntiScammer extends Chat {
 
                         for (Scammer scammer : onlineScammerList) {
                             if (scammer.uuid.equals(playerUUID.toString())) {
-                                if (playerName.equals(scammer.name)) {
+                                if (playerName.equalsIgnoreCase(scammer.name)) {
                                     scammer.name = playerName;
                                     getHelper().saveScammerFile(onlineScammerList, onlineScammerFile);
 
@@ -416,7 +413,7 @@ public class AntiScammer extends Chat {
 
                         for (Scammer scammer : localScammerList) {
                             if (scammer.uuid.equals(playerUUID.toString())) {
-                                if (playerName.equals(scammer.name)) {
+                                if (playerName.equalsIgnoreCase(scammer.name)) {
                                     String oldName = scammer.name;
                                     scammer.name = playerName;
                                     getHelper().saveScammerFile(localScammerList, localScammerFile);

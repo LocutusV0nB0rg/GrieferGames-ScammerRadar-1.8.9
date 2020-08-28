@@ -200,12 +200,11 @@ public class Helper {
             for (NetworkPlayerInfo player : playerMap) {
                 boolean found = false;
                 if (player.getDisplayName() != null) {
-                    IChatComponent playerDisplayName = player.getDisplayName();
 
                     String playerName = player.getGameProfile().getName();
 
                     for (String scammer : scammerList) {
-                        if (playerName.equals(scammer)) {
+                        if (playerName.equalsIgnoreCase(scammer)) {
                             scammerServerList.add(playerName);
                         }
                     }
