@@ -6,10 +6,12 @@ libs
 *.txt
 *.bat
 *.iws
-.DS_Store
 gradlew
 *.xml
 .gradle
 gradle
 target
 eclipse
+build.gradle
+.DS_Store
+.gardle
