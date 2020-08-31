@@ -158,11 +158,14 @@ public class Helper {
                 e.printStackTrace();
             }
         }
+            if(_scammerList != null) {
 
-            if(_scammerFile.equals(onlineScammerFile))
-                GrieferGames.getAntiscammer().setOnlineScammerList(_scammerList);
-            else
-                GrieferGames.getAntiscammer().setLocalScammerList(_scammerList);
+                if (_scammerFile.equals(onlineScammerFile))
+                    GrieferGames.getAntiscammer().setOnlineScammerList(_scammerList);
+                else
+                    GrieferGames.getAntiscammer().setLocalScammerList(_scammerList);
+
+            }
     }
 
     public List<String> joinScammerLists() {
@@ -172,9 +175,6 @@ public class Helper {
 
         for (int i = 0; i<onlineScammerList.size(); i++)
             scammerList.add(onlineScammerList.get(i).name.toLowerCase());
-
-        if(localScammerList.size()<1)
-            return scammerList;
 
         for (int i = 0; i<localScammerList.size(); i++)
             scammerList.add(localScammerList.get(i).name.toLowerCase());

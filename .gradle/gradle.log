@@ -17,7 +17,7 @@ Warning, useNotchSrg() is deprecated! You should use mappingType instead.Warning
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
+:sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
 Note: /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/build/sources/main/java/de/newH1VE/griefergames/GrieferGames.java uses or overrides a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
@@ -48,4 +48,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 19.294 secs
+Total time: 14.028 secs
