@@ -229,7 +229,7 @@ public class GrieferGames extends LabyModAddon {
         // initial load of scammerFiles
         getHelper().loadScammerFile(onlineScammerFile);
         getHelper().loadScammerFile(localScammerFile);
-        getHelper().joinScammerLists();
+        getAntiscammer().setScammerList(getHelper().joinScammerLists());
 
         // set ip
         setServerIp("griefergames.net");

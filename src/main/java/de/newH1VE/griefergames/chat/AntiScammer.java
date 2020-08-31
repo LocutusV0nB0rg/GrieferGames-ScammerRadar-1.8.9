@@ -35,7 +35,6 @@ public class AntiScammer extends Chat {
     private static Pattern privateMessageSentRegex = Pattern
             .compile("^\\[mir -> ([A-Za-z\\-]+\\+?) \\u2503 ((\\u007E)?\\w{1,16})\\](.*)$");
 
-
     List<String> scammerList = new ArrayList<String>();
     List<Scammer> onlineScammerList = new ArrayList<Scammer>();
     List<Scammer> localScammerList = new ArrayList<Scammer>();
@@ -46,10 +45,6 @@ public class AntiScammer extends Chat {
 
     public AntiScammer() {
         // do nothing ;)
-    }
-
-    public void setScammerList(List<String> scammerList) {
-        this.scammerList = scammerList;
     }
 
     public List<Scammer> getOnlineScammerList() {
@@ -71,6 +66,10 @@ public class AntiScammer extends Chat {
     public List<String> getScammerList()
     {
         return scammerList;
+    }
+
+    public void setScammerList(List<String> scammerList) {
+        this.scammerList = scammerList;
     }
 
     @Override
@@ -121,6 +120,8 @@ public class AntiScammer extends Chat {
                 userName = getUserFromPrivateMessage(unformatted);
             }
 
+
+
             if (userName.trim().length() > 0 && scammerList.contains(userName.toLowerCase())) {
 
                 IChatComponent befScammerMsg = new ChatComponentText("[")
@@ -158,15 +159,18 @@ public class AntiScammer extends Chat {
         // check which command has been typed in
         // possible commands: /scammer {add, remove, help, all, update, reload, check}
 
+
+
         if (unformatted.toLowerCase().startsWith("/scammer reload")) {
             getHelper().printPrefixLine();
             getApi().displayMessageInChat(ModColor.WHITE + "Liste wird geladen, bitte warten...");
             Thread thread = new Thread() {
                 public void run() {
                     try {
-                        onlineScammerList = getHelper().loadScammerFile(onlineScammerFile);
-                        localScammerList = getHelper().loadScammerFile(localScammerFile);
-                        getHelper().joinScammerLists();
+                        getHelper().loadScammerFile(onlineScammerFile);
+                        getHelper().loadScammerFile(localScammerFile);
+                        scammerList = getHelper().joinScammerLists();
+
 
                         getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde neu geladen.");
                         getHelper().printPrefixLine();
@@ -191,6 +195,7 @@ public class AntiScammer extends Chat {
             try {
 
                 getHelper().updateScammerLists();
+                scammerList = getHelper().joinScammerLists();
 
                 getHelper().printPrefixLine();
                 getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde aktualisiert.");
@@ -297,10 +302,10 @@ public class AntiScammer extends Chat {
                             Thread thread = new Thread() {
                                 public void run() {
                                     try {
-                                        scammerList.remove(playerName.toLowerCase());
                                         localScammerList.remove(scammerListIndex);
 
                                         getHelper().saveScammerFile(localScammerList, localScammerFile);
+                                        scammerList.remove(playerName.toLowerCase());
 
                                         getApi().displayMessageInChat(
                                                 ModColor.WHITE + playerName + " wurde als Scammer entfernt!");

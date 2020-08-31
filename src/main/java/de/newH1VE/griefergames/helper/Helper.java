@@ -90,9 +90,8 @@ public class Helper {
                 }
 
 
-                GrieferGames.getAntiscammer().setOnlineScammerList(loadScammerFile(onlineScammerFile));
-                GrieferGames.getAntiscammer().setLocalScammerList(loadScammerFile(localScammerFile));
-                joinScammerLists();
+                loadScammerFile(onlineScammerFile);
+                loadScammerFile(localScammerFile);
 
             }
         };
@@ -101,11 +100,10 @@ public class Helper {
 
     }
 
-    public List<Scammer> loadScammerFile(File _scammerFile) {
+    public void loadScammerFile(File _scammerFile) {
 
         List<Scammer> _scammerList = new ArrayList<Scammer>();
 
-        List<String> scammerList = GrieferGames.getAntiscammer().getScammerList();
         boolean isOnlineScammer = false;
 
         if (!scammerFilePath.exists()) {
@@ -160,34 +158,33 @@ public class Helper {
                 e.printStackTrace();
             }
         }
-        if (_scammerList != null) {
-            for (Scammer scammer : _scammerList) {
-                if (!scammerList.contains(scammer.name.toLowerCase())) {
-                    scammerList.add(scammer.name.toLowerCase());
-                }
-            }
+
             if(_scammerFile.equals(onlineScammerFile))
                 GrieferGames.getAntiscammer().setOnlineScammerList(_scammerList);
             else
                 GrieferGames.getAntiscammer().setLocalScammerList(_scammerList);
-
-            return _scammerList;
-        }
-        return new ArrayList<Scammer>();
     }
 
-    public void joinScammerLists() {
+    public List<String> joinScammerLists() {
         List<String> scammerList = new ArrayList<String>();
         List<Scammer> onlineScammerList = GrieferGames.getAntiscammer().getOnlineScammerList();
         List<Scammer> localScammerList = GrieferGames.getAntiscammer().getLocalScammerList();
 
         for (int i = 0; i<onlineScammerList.size(); i++)
-            scammerList.add(onlineScammerList.get(i).name);
+            scammerList.add(onlineScammerList.get(i).name.toLowerCase());
 
         for (int i = 0; i<localScammerList.size(); i++)
-            scammerList.add(localScammerList.get(i).name);
+            scammerList.add(localScammerList.get(i).name.toLowerCase());
 
-        GrieferGames.getAntiscammer().setScammerList(scammerList);
+        return scammerList;
+    }
+
+    public boolean checkList(List<String> scammerList,String name) {
+        for (int i=0; i<scammerList.size(); i++)
+            if(scammerList.get(i).equalsIgnoreCase(name))
+                return true;
+
+        return false;
     }
 
     public void saveScammerFile(List<Scammer> scammerList, File scammerFile) {
