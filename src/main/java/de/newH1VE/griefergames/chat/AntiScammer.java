@@ -164,9 +164,9 @@ public class AntiScammer extends Chat {
             Thread thread = new Thread() {
                 public void run() {
                     try {
-                        scammerList = new ArrayList<String>();
                         onlineScammerList = getHelper().loadScammerFile(onlineScammerFile);
                         localScammerList = getHelper().loadScammerFile(localScammerFile);
+                        getHelper().joinScammerLists();
 
                         getApi().displayMessageInChat(ModColor.WHITE + "Liste wurde neu geladen.");
                         getHelper().printPrefixLine();

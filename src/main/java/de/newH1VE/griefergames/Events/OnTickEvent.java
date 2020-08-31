@@ -40,7 +40,18 @@ public class OnTickEvent {
 
                 thread.start();
             } finally {
-                lock.unlock();
+                Thread thread = new Thread() {
+                    public void run() {
+                        try {
+                            sleep(3000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        lock.unlock();
+                    }
+                };
+
+                thread.start();
             }
 
         }
