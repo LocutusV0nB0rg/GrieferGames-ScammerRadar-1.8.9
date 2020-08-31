@@ -173,6 +173,9 @@ public class Helper {
         for (int i = 0; i<onlineScammerList.size(); i++)
             scammerList.add(onlineScammerList.get(i).name.toLowerCase());
 
+        if(localScammerList.size()<1)
+            return scammerList;
+
         for (int i = 0; i<localScammerList.size(); i++)
             scammerList.add(localScammerList.get(i).name.toLowerCase());
 
