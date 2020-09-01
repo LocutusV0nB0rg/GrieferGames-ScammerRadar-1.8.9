@@ -182,14 +182,6 @@ public class Helper {
         return scammerList;
     }
 
-    public boolean checkList(List<String> scammerList,String name) {
-        for (int i=0; i<scammerList.size(); i++)
-            if(scammerList.get(i).equalsIgnoreCase(name))
-                return true;
-
-        return false;
-    }
-
     public void saveScammerFile(List<Scammer> scammerList, File scammerFile) {
         try {
             PrintWriter w = new PrintWriter(
