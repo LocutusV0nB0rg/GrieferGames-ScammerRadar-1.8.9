@@ -39,8 +39,7 @@ Note: Recompile with -Xlint:deprecation for details.
 :reobfJar
 :extractRangemapReplacedMain
 /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/build/sources/main/java
-:retromapReplacedMain
-remapping source...
+:retromapReplacedMain UP-TO-DATE
 :sourceJar
 :assemble
 :check UP-TO-DATE
@@ -48,4 +47,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 14.028 secs
+Total time: 9.485 secs
