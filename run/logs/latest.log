@@ -1,224 +1,290 @@
-[23:13:26] [main/INFO]: Extra: []
-[23:13:26] [main/INFO]: Found and added coremod: net.labymod.core.asm.LabyModCoreMod
-[23:13:26] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/Tim/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
-[23:13:26] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:13:26] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:13:26] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
-[23:13:26] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
-[23:13:26] [main/INFO]: Forge Mod Loader version 11.15.1.1855 for Minecraft 1.8.9 loading
-[23:13:26] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_131, running on Mac OS X:x86_64:10.15.5, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
-[23:13:26] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[23:13:26] [main/INFO]: Found a command line coremod : net.labymod.core.asm.LabyModCoreMod
-[23:13:27] [main/INFO]: [Debug] Started debug logging
-[23:13:27] [main/WARN]: The coremod net.labymod.core.asm.LabyModCoreMod does not have a MCVersion annotation, it may cause issues with this version of Minecraft
-[23:13:27] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
-[23:13:27] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
-[23:13:27] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
-[23:13:27] [main/INFO]: Injecting location in coremod net.labymod.core.asm.LabyModCoreMod
-[23:13:27] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:13:27] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[23:13:27] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[23:13:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:13:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[23:13:27] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[23:13:27] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
-[23:13:28] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
-[23:13:28] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[23:13:28] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[23:13:29] [main/INFO]: [Debug] [ADDON] Given addon resources: addon.json
-[23:13:29] [main/INFO]: [Debug] [ADDON] Loading resource addon.json: true
-[23:13:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[23:13:29] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
-[23:13:29] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[23:13:29] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.main.Main...
-[23:13:29] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.Minecraft...
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.player.EntityPlayer...
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.EntityLivingBase...
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.entity.EntityPlayerSP...
-[23:13:29] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiScreen...
-[23:13:30] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.inventory.GuiContainer...
-[23:13:30] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.Item...
-[23:13:34] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.ItemStack...
-[23:13:35] [Client thread/INFO]: LWJGL Version: 2.9.2
-[23:13:36] [Client thread/INFO]: MinecraftForge v11.15.1.1855 Initialized
-[23:13:36] [Client thread/INFO]: Replaced 229 ore recipies
-[23:13:36] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
-[23:13:36] [Client thread/INFO]: Searching /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/run/mods for mods
-[23:13:39] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
-[23:13:40] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at CLIENT
-[23:13:40] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
-[23:13:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
-[23:13:40] [Client thread/INFO]: Processing ObjectHolder annotations
-[23:13:40] [Client thread/INFO]: Found 384 ObjectHolder annotations
-[23:13:40] [Client thread/INFO]: Identifying ItemStackHolder annotations
-[23:13:40] [Client thread/INFO]: Found 0 ItemStackHolder annotations
-[23:13:40] [Client thread/INFO]: Configured a dormant chunk cache size of 0
-[23:13:40] [Client thread/INFO]: Applying holder lookups
-[23:13:40] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
-[23:13:40] [Client thread/INFO]: Holder lookups applied
-[23:13:40] [Client thread/INFO]: Injecting itemstacks
-[23:13:40] [Client thread/INFO]: Itemstack injection complete
-[23:13:40] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ScaledResolution...
-[23:13:41] [Forge Version Check/INFO]: [Forge] Found status: OUTDATED Target: 11.15.1.2318
-[23:13:41] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:13:41] [Thread-7/INFO]: Initializing LWJGL OpenAL
-[23:13:41] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:13:41] [Thread-7/INFO]: OpenAL initialized.
-[23:13:41] [Sound Library Loader/INFO]: Sound engine started
-[23:13:46] [Client thread/INFO]: Max texture size: 16384
-[23:13:46] [Client thread/INFO]: Created: 16x16 textures-atlas
-[23:13:46] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.model.ModelBiped...
-[23:13:47] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.ItemRenderer...
-[23:13:47] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.EntityRenderer...
-[23:13:47] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.RenderGlobal...
-[23:13:47] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded LabyMod-3.json!
-[23:13:47] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
-[23:13:47] [Client thread/INFO]: [Debug] [LANGUAGE] en_US is not loaded! Trying to load it..
-[23:13:47] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
-[23:13:48] [Client thread/INFO]: [Debug] [LANGUAGE] Detected Minecraft language: en_US
-[23:13:48] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
-[23:13:48] [Client thread/INFO]: [Debug] [USER_MANAGER] Registered 36 cosmetics!
-[23:13:48] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Load whitelist..
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded autotext.json!
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded filters.json!
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded shortcuts.json!
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded playermenu.json!
-[23:13:48] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded tags.json!
-[23:13:48] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiMultiplayer...
-[23:13:49] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded servers.json!
-[23:13:49] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Loaded 181799 whitelisted users.
-[23:13:49] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Successfully loaded all userdata
-[23:13:49] [Thread-10/INFO]: [Debug] [EMOTE] Loaded 124 emotes!
-[23:13:49] [Thread-12/INFO]: [Debug] [LABYMOD_CHAT] Loaded 0 chats!
-[23:13:49] [Thread-14/INFO]: [Debug] [UPDATER] The latest LabyMod version is v3.6.13, you are currently using LabyMod version v3.6.6
-[23:13:49] [Thread-14/INFO]: [Debug] [UPDATER] You are outdated!
-[23:13:49] [Client thread/INFO]: [Debug] [ADDON] Enabling and init addon GrieferGames [SCAMMER]Radar...
-[23:13:49] [Client thread/INFO]: [GrieferGames AntiScammer] enabled.
-[23:13:49] [Thread-14/INFO]: [Debug] [UPDATER] Downloaded latest Updater http://dl.labymod.net/latest/install/updater.jar
-[23:13:49] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded GrieferGames [SCAMMER]Radar.json!
-[23:13:49] [Client thread/INFO]: GREEN
-[23:13:49] [Client thread/INFO]: [Debug] [ADDON] Successfull loaded addon GrieferGames [SCAMMER]Radar! (took 412 ms)
-[23:13:49] [Client thread/WARN]: =============================================================
-[23:13:49] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
-[23:13:49] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
-[23:13:49] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
-[23:13:49] [Client thread/WARN]: =============================================================
-[23:13:50] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
-[23:13:50] [Client thread/INFO]: [Debug] [DISCORD] Initialize discord rpc..
-[23:13:50] [Client thread/INFO]: [Debug] [DISCORD] Detected OS version: MAC
-[23:13:50] [Client thread/INFO]: [Debug] [DISCORD] Discord lib destination: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib
-[23:13:50] [Client thread/INFO]: [Debug] [DISCORD] Downloading latest discord library: http://dl.labymod.net/latest/install/discord/mac.dylib
-[23:13:50] [Thread-18/INFO]: [Debug] [DISCORD] Download latest discord library..
-[23:13:50] [Thread-18/ERROR]: catching
+[23:32:19] [main/INFO]: Extra: []
+[23:32:20] [main/INFO]: Found and added coremod: net.labymod.core.asm.LabyModCoreMod
+[23:32:20] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, /Users/Tim/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, net.minecraftforge.fml.common.launcher.FMLTweaker, --tweakClass, net.minecraftforge.gradle.tweakers.CoremodTweaker]
+[23:32:20] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:32:20] [main/INFO]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:32:20] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.CoremodTweaker
+[23:32:20] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[23:32:20] [main/INFO]: Forge Mod Loader version 11.15.1.1855 for Minecraft 1.8.9 loading
+[23:32:20] [main/INFO]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_131, running on Mac OS X:x86_64:10.15.5, installed at /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre
+[23:32:20] [main/INFO]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[23:32:20] [main/INFO]: Found a command line coremod : net.labymod.core.asm.LabyModCoreMod
+[23:32:21] [main/INFO]: [Debug] Started debug logging
+[23:32:21] [main/WARN]: The coremod net.labymod.core.asm.LabyModCoreMod does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[23:32:21] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.CoremodTweaker
+[23:32:21] [main/INFO]: Injecting location in coremod net.minecraftforge.fml.relauncher.FMLCorePlugin
+[23:32:21] [main/INFO]: Injecting location in coremod net.minecraftforge.classloading.FMLForgePlugin
+[23:32:21] [main/INFO]: Injecting location in coremod net.labymod.core.asm.LabyModCoreMod
+[23:32:21] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:32:21] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[23:32:21] [main/INFO]: Loading tweak class name net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[23:32:21] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:32:21] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[23:32:21] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:32:21] [main/ERROR]: The binary patch set is missing. Either you are in a development environment, or things are not going to work!
+[23:32:22] [main/ERROR]: FML appears to be missing any signature data. This is not a good thing
+[23:32:22] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:32:22] [main/INFO]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[23:32:23] [main/INFO]: [Debug] [ADDON] Given addon resources: addon.json
+[23:32:23] [main/INFO]: [Debug] [ADDON] Loading resource addon.json: true
+[23:32:23] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[23:32:23] [main/INFO]: Calling tweak class net.minecraftforge.gradle.tweakers.AccessTransformerTweaker
+[23:32:23] [main/INFO]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[23:32:23] [main/INFO]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[23:32:23] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.main.Main...
+[23:32:23] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[23:32:23] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.Minecraft...
+[23:32:23] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiScreen...
+[23:32:23] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.player.EntityPlayer...
+[23:32:24] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.entity.EntityLivingBase...
+[23:32:24] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.entity.EntityPlayerSP...
+[23:32:24] [main/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.inventory.GuiContainer...
+[23:32:25] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.Item...
+[23:32:27] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.item.ItemStack...
+[23:32:28] [Client thread/INFO]: LWJGL Version: 2.9.2
+[23:32:29] [Client thread/INFO]: MinecraftForge v11.15.1.1855 Initialized
+[23:32:29] [Client thread/INFO]: Replaced 229 ore recipies
+[23:32:29] [Client thread/INFO]: Found 0 mods from the command line. Injecting into mod discoverer
+[23:32:29] [Client thread/INFO]: Searching /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8.9/run/mods for mods
+[23:32:34] [Client thread/INFO]: Forge Mod Loader has identified 4 mods to load
+[23:32:35] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at CLIENT
+[23:32:35] [Client thread/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
+[23:32:35] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
+[23:32:36] [Client thread/INFO]: Processing ObjectHolder annotations
+[23:32:36] [Client thread/INFO]: Found 384 ObjectHolder annotations
+[23:32:36] [Client thread/INFO]: Identifying ItemStackHolder annotations
+[23:32:36] [Client thread/INFO]: Found 0 ItemStackHolder annotations
+[23:32:36] [Client thread/INFO]: Configured a dormant chunk cache size of 0
+[23:32:36] [Forge Version Check/INFO]: [Forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[23:32:36] [Client thread/INFO]: Applying holder lookups
+[23:32:36] [Client thread/INFO]: Holder lookups applied
+[23:32:36] [Client thread/INFO]: Injecting itemstacks
+[23:32:36] [Client thread/INFO]: Itemstack injection complete
+[23:32:36] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ScaledResolution...
+[23:32:36] [Forge Version Check/INFO]: [Forge] Found status: OUTDATED Target: 11.15.1.2318
+[23:32:37] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:32:37] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[23:32:37] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:32:37] [Thread-7/INFO]: OpenAL initialized.
+[23:32:37] [Sound Library Loader/INFO]: Sound engine started
+[23:32:41] [Client thread/INFO]: Max texture size: 16384
+[23:32:41] [Client thread/INFO]: Created: 16x16 textures-atlas
+[23:32:42] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.model.ModelBiped...
+[23:32:42] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.ItemRenderer...
+[23:32:42] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.EntityRenderer...
+[23:32:42] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.renderer.RenderGlobal...
+[23:32:42] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded LabyMod-3.json!
+[23:32:42] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
+[23:32:42] [Client thread/INFO]: [Debug] [LANGUAGE] en_US is not loaded! Trying to load it..
+[23:32:42] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
+[23:32:43] [Client thread/INFO]: [Debug] [LANGUAGE] Detected Minecraft language: en_US
+[23:32:43] [Client thread/INFO]: [Debug] [LANGUAGE] Using language en_US now.
+[23:32:43] [Client thread/INFO]: [Debug] [USER_MANAGER] Registered 36 cosmetics!
+[23:32:43] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Load whitelist..
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded autotext.json!
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded filters.json!
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded shortcuts.json!
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded playermenu.json!
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded tags.json!
+[23:32:43] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiMultiplayer...
+[23:32:43] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded servers.json!
+[23:32:43] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Loaded 181799 whitelisted users.
+[23:32:43] [pool-7-thread-2/INFO]: [Debug] [USER_MANAGER] Successfully loaded all userdata
+[23:32:44] [Thread-10/INFO]: [Debug] [EMOTE] Loaded 124 emotes!
+[23:32:44] [Thread-14/INFO]: [Debug] [UPDATER] The latest LabyMod version is v3.6.13, you are currently using LabyMod version v3.6.6
+[23:32:44] [Thread-14/INFO]: [Debug] [UPDATER] You are outdated!
+[23:32:44] [Client thread/INFO]: [Debug] [ADDON] Enabling and init addon GrieferGames [SCAMMER]Radar...
+[23:32:44] [Client thread/INFO]: [GrieferGames AntiScammer] enabled.
+[23:32:44] [Thread-14/INFO]: [Debug] [UPDATER] Downloaded latest Updater http://dl.labymod.net/latest/install/updater.jar
+[23:32:44] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded GrieferGames [SCAMMER]Radar.json!
+[23:32:44] [Client thread/INFO]: GREEN
+[23:32:44] [Client thread/INFO]: [Debug] [ADDON] Successfull loaded addon GrieferGames [SCAMMER]Radar! (took 384 ms)
+[23:32:44] [Client thread/WARN]: =============================================================
+[23:32:44] [Client thread/WARN]: MOD HAS DIRECT REFERENCE System.exit() THIS IS NOT ALLOWED REROUTING TO FML!
+[23:32:44] [Client thread/WARN]: Offendor: com/sun/jna/Native.main([Ljava/lang/String;)V
+[23:32:44] [Client thread/WARN]: Use FMLCommonHandler.exitJava instead
+[23:32:44] [Client thread/WARN]: =============================================================
+[23:32:44] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
+[23:32:45] [Client thread/INFO]: [Debug] [DISCORD] Initialize discord rpc..
+[23:32:45] [Client thread/INFO]: [Debug] [DISCORD] Detected OS version: MAC
+[23:32:45] [Client thread/INFO]: [Debug] [DISCORD] Discord lib destination: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib
+[23:32:45] [Client thread/INFO]: [Debug] [DISCORD] Downloading latest discord library: http://dl.labymod.net/latest/install/discord/mac.dylib
+[23:32:45] [Thread-18/INFO]: [Debug] [DISCORD] Download latest discord library..
+[23:32:45] [Thread-18/ERROR]: catching
 java.io.FileNotFoundException: /Users/Tim/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.:/Users/Tim/.gradle/caches/minecraft/net/minecraft/natives/1.8.9/liblibdiscordRPC.dylib (No such file or directory)
 	at java.io.FileOutputStream.open0(Native Method) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.open(FileOutputStream.java:270) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:213) ~[?:1.8.0_131]
 	at java.io.FileOutputStream.<init>(FileOutputStream.java:162) ~[?:1.8.0_131]
 	at net.labymod.discordapp.api.DiscordLibraryProvider.run(DiscordLibraryProvider.java:70) [DiscordLibraryProvider.class:?]
-[23:13:50] [Thread-18/INFO]: [Debug] [DISCORD] No Discord library found!
-[23:13:50] [Client thread/INFO]: Injecting itemstacks
-[23:13:50] [Client thread/INFO]: Itemstack injection complete
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
-[23:13:50] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
-[23:13:50] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
-[23:13:50] [Client thread/INFO]: SoundSystem shutting down...
-[23:13:50] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[23:13:50] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] Invalid session
-[23:13:50] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for a4081500-9e8c-36ae-a97c-f165f9882cba
-[23:13:50] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Saved 0 chats!
-[23:13:50] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 60 PacketDisconnect
-[23:13:50] [Thread-19/INFO]: Initializing LWJGL OpenAL
-[23:13:50] [Thread-19/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[23:13:50] [Thread-19/INFO]: OpenAL initialized.
-[23:13:51] [Sound Library Loader/INFO]: Sound engine started
-[23:13:54] [Client thread/INFO]: Max texture size: 16384
-[23:13:54] [Client thread/INFO]: Created: 512x512 textures-atlas
-[23:13:56] [pool-12-thread-1/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/twitter.png
-[23:13:56] [pool-12-thread-2/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/discord.png
-[23:13:56] [pool-12-thread-3/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/shop.png
-[23:14:11] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.network.OldServerPinger...
-[23:14:11] [Client thread/WARN]: Unable to start LAN server detection: Can't assign requested address
-[23:14:11] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiSlot...
-[23:14:11] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ServerListEntryNormal...
-[23:14:11] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ServerListEntryNormal$1...
-[23:14:11] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.util.MessageDeserializer...
-[23:14:12] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.network.play.server.S21PacketChunkData...
-[23:14:12] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.network.play.server.S26PacketMapChunkBulk...
-[23:14:12] [Netty Client IO #0/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
-[23:14:14] [Client thread/INFO]: [Debug] [LABYMOD_CHAT] Loaded 0 chats!
-[23:14:14] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
-[23:14:14] [Client thread/INFO]: [Debug] [ACCOUNT_MANAGER] AccountManager: You are now playing with newH1VE.
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
-[23:14:14] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
-[23:14:15] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 11 PacketEncryptionResponse
-[23:14:15] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 7 PacketLoginComplete
-[23:14:15] [Client thread/INFO]: Connecting to bungee2.griefergames.net., 25565
-[23:14:15] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiDisconnected...
-[23:14:16] [Netty Client IO #1/INFO]: [Debug] [ASM] Transforming net.minecraft.client.network.NetHandlerPlayClient...
-[23:14:16] [Netty Client IO #1/INFO]: Aborting client handshake "VANILLA"
-[23:14:16] [Netty Client IO #1/INFO]: [Netty Client IO #1] Client side vanilla connection established
-[23:14:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] MC|Brand
-[23:14:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [OUT] [LMC] {"version":"3.6.6","ccp":{"enabled":true,"version":2},"shadow":{"enabled":true,"version":1},"addons":[{"uuid":"362b8988-fd8b-47bf-98fa-6122d4ceb06d","name":"GrieferGames [SCAMMER]Radar"}],"mods":[]}
-[23:14:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] MC|Brand
-[23:14:16] [pool-7-thread-3/INFO]: [Debug] [USER_MANAGER] Load user data of b1f6fcb1-e517-4508-8f28-d7b6a0260d9a
-[23:14:16] [pool-7-thread-3/INFO]: [Debug] [USER_MANAGER] {"c":[],"e":[8,20,63,149,32,77],"g":[]}
-[23:14:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] PERMISSIONS: {"BLOCKBUILD":true,"GUI_POTION_EFFECTS":true,"TAGS":true,"REFILL_FIX":false,"CROSSHAIR_SYNC":false,"GUI_ITEM_HUD":true,"CHAT":true,"GUI_ALL":true,"IMPROVED_LAVA":false,"SATURATION_BAR":true,"GUI_ARMOR_HUD":true,"ANIMATIONS":true}
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 54a19277-ac5b-7de3-0000-000000000000: §61585 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 189b295c-20ac-38db-0000-000000000000: §60 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 5d685292-952a-6607-0000-000000000000: §7Hier läuft gerade ein Event
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for bf440d02-269c-3887-0000-000000000000: §62 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for b7ec24e0-c188-370d-0000-000000000000: §60 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for e9fdc82a-27e5-9317-0000-000000000000: §67 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 23a8fd6d-50c6-378d-0000-000000000000: §63 §7Spieler §aonline
-[23:14:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61585 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§62 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§67 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
-[23:14:17] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 68 PacketPlayServerStatusUpdate
-[23:14:17] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
-[23:14:17] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
-[23:14:17] [Client thread/INFO]: [Debug] [MINECRAFT] Connected to server griefergames.net
-[23:14:17] [Client thread/INFO]: [CHAT]                                      
-[23:14:17] [Client thread/INFO]: [CHAT]  
-[23:14:17] [Client thread/INFO]: [CHAT] No trails selected !
-[23:14:17] [Client thread/INFO]: [CHAT] §b§nClick here to open trail menu
-[23:14:17] [Client thread/INFO]: [CHAT]  
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61586 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §60 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §62 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §60 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §67 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §62 §7Spieler §aonline
-[23:14:20] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61586 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§62 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§67 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§62 §7Spieler &aonline"}]
-[23:14:23] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 29 PacketActionRequest
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61584 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §60 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §62 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §60 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §67 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §62 §7Spieler §aonline
-[23:14:25] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61584 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§62 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§60 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§67 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§62 §7Spieler &aonline"}]
-[23:14:26] [Client thread/INFO]: [CHAT] ---------- [SCAMMER] ----------
-[23:14:26] [Client thread/INFO]: [CHAT] Der eingegebene Name wird überprüft. Bitte warten ...
-[23:14:26] [Client thread/INFO]: [CHAT] Der Spieler 1Swidi ist als [SCAMMER] auf der [SCAMMER]Radar Liste hinterlegt!
-[23:14:26] [Client thread/INFO]: [CHAT] ---------- [SCAMMER] ----------
-[23:14:29] [Client thread/INFO]: Stopping!
-[23:14:29] [Client thread/INFO]: SoundSystem shutting down...
-[23:14:29] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[23:14:29] [Thread-15/INFO]: [Debug] [UPDATER] Executing LabyMod Updater
-[23:14:29] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for b1f6fcb1-e517-4508-8f28-d7b6a0260d9a
+[23:32:45] [Thread-18/INFO]: [Debug] [DISCORD] No Discord library found!
+[23:32:45] [Client thread/INFO]: Injecting itemstacks
+[23:32:45] [Client thread/INFO]: Itemstack injection complete
+[23:32:45] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
+[23:32:46] [Client thread/INFO]: Forge Mod Loader has successfully loaded 4 mods
+[23:32:46] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:LabyMod
+[23:32:46] [Client thread/INFO]: SoundSystem shutting down...
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] Invalid session
+[23:32:46] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for f4642d2b-29f9-34b7-8b90-e6570e856434
+[23:32:46] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Create new log file for f4642d2b-29f9-34b7-8b90-e6570e856434
+[23:32:46] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Saved 0 chats!
+[23:32:46] [Chat#0/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 60 PacketDisconnect
+[23:32:46] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[23:32:46] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[23:32:46] [Thread-19/INFO]: Initializing LWJGL OpenAL
+[23:32:46] [Thread-19/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[23:32:46] [Thread-19/INFO]: OpenAL initialized.
+[23:32:47] [Sound Library Loader/INFO]: Sound engine started
+[23:32:50] [Client thread/INFO]: Max texture size: 16384
+[23:32:51] [Client thread/INFO]: Created: 512x512 textures-atlas
+[23:32:52] [pool-12-thread-1/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/twitter.png
+[23:32:52] [pool-12-thread-2/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/discord.png
+[23:32:52] [pool-12-thread-3/INFO]: [Debug] [GENERAL] Downloaded texture http://dl.labymod.net/advertisement/icons/shop.png
+[23:34:23] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.network.OldServerPinger...
+[23:34:23] [Client thread/WARN]: Unable to start LAN server detection: Can't assign requested address
+[23:34:23] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiSlot...
+[23:34:23] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ServerListEntryNormal...
+[23:34:24] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.ServerListEntryNormal$1...
+[23:34:24] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.util.MessageDeserializer...
+[23:34:24] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.network.play.server.S21PacketChunkData...
+[23:34:24] [Netty Client IO #0/INFO]: [Debug] [ASM] Transforming net.minecraft.network.play.server.S26PacketMapChunkBulk...
+[23:34:24] [Netty Client IO #0/INFO]: Attempting connection with missing mods [mcp, FML, Forge, labymod] at SERVER
+[23:34:25] [Client thread/INFO]: [Debug] [LABYMOD_CHAT] Loaded 0 chats!
+[23:34:25] [Helper#0/INFO]: [Debug] [LABYMOD_CHAT] Connecting to mod.labymod.net:30336
+[23:34:25] [Client thread/INFO]: [Debug] [ACCOUNT_MANAGER] AccountManager: You are now playing with newH1VE.
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 0 PacketHelloPing
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 1 PacketHelloPong
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 3 PacketLoginData
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 6 PacketLoginOptions
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 9 PacketLoginVersion
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 32 PacketAddonMessage
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 10 PacketEncryptionRequest
+[23:34:25] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 11 PacketEncryptionResponse
+[23:34:26] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 7 PacketLoginComplete
+[23:34:26] [Client thread/INFO]: Connecting to bungee3.griefergames.net., 25565
+[23:34:26] [Client thread/INFO]: [Debug] [ASM] Transforming net.minecraft.client.gui.GuiDisconnected...
+[23:34:27] [Netty Client IO #1/INFO]: [Debug] [ASM] Transforming net.minecraft.client.network.NetHandlerPlayClient...
+[23:34:27] [Netty Client IO #1/INFO]: Aborting client handshake "VANILLA"
+[23:34:27] [Netty Client IO #1/INFO]: [Netty Client IO #1] Client side vanilla connection established
+[23:34:27] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] MC|Brand
+[23:34:27] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [OUT] [LMC] {"version":"3.6.6","ccp":{"enabled":true,"version":2},"shadow":{"enabled":true,"version":1},"addons":[{"uuid":"11e32097-1a85-45f9-a976-0b5ab1def156","name":"GrieferGames [SCAMMER]Radar"}],"mods":[]}
+[23:34:27] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] MC|Brand
+[23:34:27] [pool-7-thread-3/INFO]: [Debug] [USER_MANAGER] Load user data of b1f6fcb1-e517-4508-8f28-d7b6a0260d9a
+[23:34:27] [pool-7-thread-3/INFO]: [Debug] [USER_MANAGER] {"c":[],"e":[8,20,63,149,32,77],"g":[]}
+[23:34:28] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] PERMISSIONS: {"BLOCKBUILD":true,"GUI_POTION_EFFECTS":true,"TAGS":true,"REFILL_FIX":false,"CROSSHAIR_SYNC":false,"GUI_ITEM_HUD":true,"CHAT":true,"GUI_ALL":true,"IMPROVED_LAVA":false,"SATURATION_BAR":true,"GUI_ARMOR_HUD":true,"ANIMATIONS":true}
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 54a19277-ac5b-7de3-0000-000000000000: §61464 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 189b295c-20ac-38db-0000-000000000000: §61 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 5d685292-952a-6607-0000-000000000000: §7Hier läuft gerade ein Event
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for bf440d02-269c-3887-0000-000000000000: §61 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for b7ec24e0-c188-370d-0000-000000000000: §61 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for e9fdc82a-27e5-9317-0000-000000000000: §64 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [USER_MANAGER] Added subtitle for 23a8fd6d-50c6-378d-0000-000000000000: §63 §7Spieler §aonline
+[23:34:28] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61464 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:29] [Client thread/INFO]: [CHAT]                                      
+[23:34:29] [Client thread/INFO]: [CHAT]  
+[23:34:29] [Client thread/INFO]: [CHAT] No trails selected !
+[23:34:29] [Client thread/INFO]: [CHAT] §b§nClick here to open trail menu
+[23:34:29] [Client thread/INFO]: [CHAT]  
+[23:34:29] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 68 PacketPlayServerStatusUpdate
+[23:34:29] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Switched profile to default
+[23:34:29] [Client thread/INFO]: [Debug] [CONFIG_MANAGER] Loaded modules.json!
+[23:34:29] [Client thread/INFO]: [Debug] [MINECRAFT] Connected to server griefergames.net
+[23:34:30] [pool-7-thread-4/INFO]: [Debug] [USER_MANAGER] Load user data of 1daee7ce-2544-43bd-822f-f24581e84d50
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61461 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:31] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61461 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:33] [Client thread/INFO]: [CHAT] ---------- [SCAMMER] ----------
+[23:34:33] [Client thread/INFO]: [CHAT] newH1VE
+[23:34:33] [Client thread/INFO]: [CHAT] ---------- [SCAMMER] ----------
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61462 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:36] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61462 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61458 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:41] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61458 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61457 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:46] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61457 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61453 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:51] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61453 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:34:51] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [OUT] 29 PacketActionRequest
+[23:34:51] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 4 PacketLoginFriend
+[23:34:51] [Chat#1/INFO]: [Debug] [LABYMOD_CHAT] [IN] 5 PacketLoginRequest
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61452 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:34:56] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61452 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61450 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:35:01] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61450 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61448 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:35:06] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61448 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61447 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:35:11] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61447 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 54a19277-ac5b-7de3-0000-000000000000 to §61447 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 189b295c-20ac-38db-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 5d685292-952a-6607-0000-000000000000 to §7Hier läuft gerade ein Event
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of bf440d02-269c-3887-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of b7ec24e0-c188-370d-0000-000000000000 to §61 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of e9fdc82a-27e5-9317-0000-000000000000 to §64 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [USER_MANAGER] Updated subtitle of 23a8fd6d-50c6-378d-0000-000000000000 to §63 §7Spieler §aonline
+[23:35:16] [Client thread/INFO]: [Debug] [PLUGINMESSAGE] [IN] [LMC] account_subtitle: [{"uuid":"54a19277-ac5b-7de3-0000-000000000000","size":1.2,"value":"§61447 §7Spieler &aonline"},{"uuid":"189b295c-20ac-38db-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"5d685292-952a-6607-0000-000000000000","size":1.2,"value":"§7Hier läuft gerade ein Event"},{"uuid":"bf440d02-269c-3887-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"b7ec24e0-c188-370d-0000-000000000000","size":1.2,"value":"§61 §7Spieler &aonline"},{"uuid":"e9fdc82a-27e5-9317-0000-000000000000","size":1.2,"value":"§64 §7Spieler &aonline"},{"uuid":"23a8fd6d-50c6-378d-0000-000000000000","size":1.2,"value":"§63 §7Spieler &aonline"}]
+[23:35:17] [Client thread/INFO]: Stopping!
+[23:35:17] [Client thread/INFO]: SoundSystem shutting down...
+[23:35:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[23:35:17] [Thread-15/INFO]: [Debug] [UPDATER] Executing LabyMod Updater
+[23:35:17] [Helper#1/INFO]: [Debug] [LABYMOD_CHAT] Save chat log file for b1f6fcb1-e517-4508-8f28-d7b6a0260d9a

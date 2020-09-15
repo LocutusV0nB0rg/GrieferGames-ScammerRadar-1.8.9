@@ -3,7 +3,7 @@
 	"name":"GrieferGames [SCAMMER]Radar",
 	"mainClass":"de.newH1VE.griefergames.GrieferGames",
 	"description": "This add-on helps you to identify scammer in public/private chat. Regards to wuzlwuz who had delivered key elements of the addon.",
-	"version": 1.8,
+	"version": 1.9,
 	"author": "newH1VE",
 	"category": 2,
 	"icon" : "https://image.flaticon.com/icons/png/512/3066/3066592.png"

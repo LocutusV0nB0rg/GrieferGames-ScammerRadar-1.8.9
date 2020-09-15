@@ -23,7 +23,7 @@ Note: /Users/Tim/Documents/Minecraft/Scammer Radar/GrieferGames-ScammerRadar-1.8
 Note: Recompile with -Xlint:deprecation for details.
 1 warning
 
-:processResources UP-TO-DATE
+:processResources
 :classes
 :jar
 :sourceTestJava UP-TO-DATE
@@ -48,4 +48,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 23.482 secs
+Total time: 17.584 secs
