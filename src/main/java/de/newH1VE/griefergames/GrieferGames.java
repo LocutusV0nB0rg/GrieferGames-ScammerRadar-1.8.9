@@ -8,7 +8,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-import de.newH1VE.griefergames.Events.OnTickEvent;
+import de.newH1VE.griefergames.Events.OnKeyEvent;
+import de.newH1VE.griefergames.antiScammer.ListUpdater;
 import de.newH1VE.griefergames.chat.AntiScammer;
 import de.newH1VE.griefergames.helper.Helper;
 import net.labymod.api.LabyModAddon;
@@ -36,6 +37,7 @@ public class GrieferGames extends LabyModAddon {
     private boolean messageenabled = false;
     private boolean tablistenabled = true;
     private boolean doAntiScammer = false;
+    private static ListUpdater listupdater = new ListUpdater();
     private static AntiScammer antiscammer = new AntiScammer();
     private static Pattern msgStartsWithTime = Pattern.compile("^\\[(\\d{2}\\:){2}\\d{2}\\][^$]*$");
     private ModColor prefixcolor = ModColor.DARK_RED;
@@ -226,10 +228,21 @@ public class GrieferGames extends LabyModAddon {
         setHelper(new Helper());
 
 
+        // get new scammer list from webserver
+        try {
+            listupdater.updateScammerFile(onlineScammerFile);
+
+        } catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }
+
         // initial load of scammerFiles
         getHelper().loadScammerFile(onlineScammerFile);
         getHelper().loadScammerFile(localScammerFile);
         getAntiscammer().setScammerList(getHelper().joinScammerLists());
+
+
 
         // set ip
         setServerIp("griefergames.net");
@@ -272,7 +285,8 @@ public class GrieferGames extends LabyModAddon {
         });
 
         // register eventlistener for tablist updates
-        getApi().registerForgeListener(new OnTickEvent());
+        //getApi().registerForgeListener(new OnTickEvent());
+        getApi().registerForgeListener(new OnKeyEvent());
 
         // listener for sending messages
         getApi().getEventManager().register(new MessageSendEvent() {
